@@ -11,29 +11,27 @@ h6 {
   margin: 0;
 }
 
-h1,
-.heading-1 {
+h1, .heading-1 {
   @include heading1();
 }
 
-h2,
-.heading-2 {
+h2, .heading-2 {
   @include heading2();
 }
 
-h3 {
+h3, .heading-3 {
   @include heading3();
 }
 
-h4 {
+h4, .heading-4 {
   @include heading4();
 }
 
-h5 {
+h5, .heading-5 {
   @include heading5();
 }
 
-h6 {
+h6, .heading-6 {
   @include heading6();
 }
 

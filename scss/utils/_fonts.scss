@@ -2,12 +2,27 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-// Momentm
-// @font-face {
-//   font-family: "MonumentExtended";
-//   src: url("../fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
-//     url("../fonts/MonumentExtended-Ultrabold.woff") format("woff");
-//   font-weight: 900;
-//   font-size: normal;
-//   font-display: swap;
-// }
+// Texgyreadventor
+@font-face {
+  font-family: "Texgyreadventor";
+  src: url("../fonts/texgyreadventor-bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Texgyreadventor";
+  src: url("../fonts/texgyreadventor-bolditalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Texgyreadventor";
+  src: url("../fonts/texgyreadventor-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Texgyreadventor";
+  src: url("../fonts/texgyreadventor-regular.otf") format("opentype");
+  font-weight: 400;
+}
+

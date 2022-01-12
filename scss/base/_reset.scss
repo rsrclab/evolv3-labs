@@ -6,10 +6,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: $white;
-  color: $text_color;
+  color: $white;
   overflow-x: hidden;
-  @include bodyText();
 }
 
 *,
@@ -33,19 +31,8 @@ img {
   max-width: 100%;
 }
 
-scroll {
-  width: 100vw;
-  height: 100vh;
-}
-
 main {
   max-width: 100%;
-  overflow-x: hidden;
-}
-
-hr {
-  border-top: 1px solid rgba(112, 112, 112, 0.6);
-  border-bottom: 0;
 }
 
 ul {

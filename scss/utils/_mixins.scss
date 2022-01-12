@@ -31,10 +31,19 @@
 
 // Typography mixins
 @mixin heading1() {
+  font-family: 'Texgyreadventor';
+  font-size: 70px;
+  font-weight: 400;
 }
 @mixin heading2() {
+  font-family: 'Texgyreadventor';
+  font-size: 60px;
+  font-weight: 400;
 }
 @mixin heading3() {
+  font-family: 'Texgyreadventor';
+  font-size: 50px;
+  font-weight: 400;
 }
 @mixin heading4() {
 }
@@ -43,6 +52,7 @@
 @mixin heading6() {
 }
 @mixin bodyText($size: 2) {
+  font-family: 'Rajdhani';
 }
 
 @mixin pseudo-elements() {

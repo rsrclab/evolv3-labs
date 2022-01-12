@@ -3,3 +3,155 @@
 // -----------------------------------------------------------------------------
 
 // Header styles
+.header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  z-index: 10;
+  &-logo {
+    display: flex;
+    margin-left: 45px;
+    z-index: 5;
+    a {
+      margin-right: 20px;
+      font-size: 0;
+    }
+    &__text {
+      margin-top: 35px;
+      font-family: 'Texgyreadventor';
+      font-size: 22px;
+      span {
+        color: $secondary;
+      }
+    }
+  }
+  &-notification {
+    margin: 25px 20px 0 auto;
+    padding: 11px 25px;
+    background-color: #141414;
+    border-radius: 20px;
+    font-family: 'Rajdhani';
+    font-size: 17px;
+    font-weight: 700;
+    span {
+      color: $green;
+    }
+  }
+  &-menu {
+    position: fixed;
+    top: 0;
+    right: -470px;
+    width: 470px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 1px solid #707070;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 470px;
+      width: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      transition: all 0.3s ease-in-out;
+    }
+    &.open {
+      right: 0;
+      &::before {
+        width: calc(100vw - 470px);
+      }
+    }
+    &__holder {
+      position: relative;
+      padding: 150px 70px 30px 30px;
+      z-index: 1;
+    }
+    &__items {
+      text-align: right;
+    }
+    &__item {
+      font-family: 'Texgyreadventor';
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      a {
+        color: $primary;
+        font-size: 30px;
+      }
+    }
+    &__socials {
+      margin-top: 38px;
+      display: flex;
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 3px;
+      font-size: 30px;
+      background: transparent;
+      transition: all 0.3s ease-in-out;
+      &:not(:first-child) {
+        margin-left: 14px;
+      }
+      &:first-child {
+        margin-left: auto;
+      }
+      a {
+        color: $white;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        background: $white;
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+  &-nav {
+    display: none;
+    width: 100%;
+    margin-top: 60px;
+    &__items {
+      display: flex;
+    }
+    &__item {
+      &:first-child {
+        display: none;
+      }
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+      a {
+        color: #363636;
+        font-family: 'Texgyreadventor';
+        font-size: 30px;
+        transition: all 0.3s ease-in-out;
+      }
+      &:not(.active):hover {
+        a {
+          color: #A0A0A0;
+        }
+      }
+      &.active {
+        background: radial-gradient(#fff 0%, #A0A0A0 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .hamburger {
+    margin-top: 30px;
+    margin-right: 45px;
+    z-index: 5;
+  }
+}
