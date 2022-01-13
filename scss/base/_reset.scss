@@ -1,6 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+:root {
+  font-size: 10px;
+  @media (min-width: 1921px) {
+    font-size: 13px;
+  }
+  @media (min-width: 2221px) {
+    font-size: 16px;
+  }
+}
+
 html,
 body {
   margin: 0;

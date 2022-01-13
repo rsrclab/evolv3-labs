@@ -1,19 +1,27 @@
 .hamburger {
-  width: 30px;
-  height: 30px;
+  width: 3.0rem;
+  height: 3.0rem;
   position: relative;
   transition: .1s;
   cursor: pointer;
   display: inline-block;
+  @include mq("tablet-small", max) {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 .hamburger span {
-  width: 5px;
-  height: 5px;
+  width: .5rem;
+  height: .5rem;
   background-color: #696969;
   display: block;
   border-radius: 50%;
   position: absolute;
+  @include mq("tablet-small", max) {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
 
 }
 
@@ -29,8 +37,11 @@
 }
 
 .hamburger span:nth-child(2) {
-  left: 12px;
+  left: 1.2rem;
   top: 0;
+  @include mq("tablet-small", max) {
+    left: 1.0rem;
+  }
 }
 
 .hamburger span:nth-child(3) {
@@ -40,34 +51,47 @@
 
 .hamburger span:nth-child(4) {
   left: 0;
-  top: 12px;
+  top: 1.2rem;
+  @include mq("tablet-small", max) {
+    top: 1.0rem;
+  }
 }
 
 .hamburger span:nth-child(5) {
   position: absolute;
-  left: 12px;
-  top: 12px;
+  left: 1.2rem;
+  top: 1.2rem;
+  @include mq("tablet-small", max) {
+    left: 1.0rem;
+    top: 1.0rem;
+  }
 }
 
 .hamburger span:nth-child(6) {
-  right: 0px;
-  top: 12px;
+  right: .0rem;
+  top: 1.2rem;
+  @include mq("tablet-small", max) {
+    top: 1.0rem;
+  }
 }
 
 .hamburger span:nth-child(7) {
-  left: 0px;
-  bottom: 0px;
+  left: .0rem;
+  bottom: .0rem;
 }
 
 .hamburger span:nth-child(8) {
   position: absolute;
-  left: 12px;
-  bottom: 0px;
+  left: 1.2rem;
+  bottom: .0rem;
+  @include mq("tablet-small", max) {
+    left: 1.0rem;
+  }
 }
 
 .hamburger span:nth-child(9) {
-  right: 0px;
-  bottom: 0px;
+  right: .0rem;
+  bottom: .0rem;
 }
 
 .hamburger.open {
@@ -83,21 +107,37 @@
 }
 
 .hamburger.open span:nth-child(2) {
-  left: 6px;
-  top: 6px;
+  left: .6rem;
+  top: .6rem;
+  @include mq("tablet-small", max) {
+    left: 0.5rem;
+    top: 0.5rem;
+  }
 }
 
 .hamburger.open span:nth-child(4) {
-  left: 6px;
-  top: 18px;
+  left: .6rem;
+  top: 1.8rem;
+  @include mq("tablet-small", max) {
+    left: 0.5rem;
+    top: 1.5rem;
+  }
 }
 
 .hamburger.open span:nth-child(6) {
-  right: 6px;
-  top: 6px;
+  right: .6rem;
+  top: .6rem;
+  @include mq("tablet-small", max) {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
 }
 
 .hamburger.open span:nth-child(8) {
-  left: 18px;
-  bottom: 6px;
+  left: 1.8rem;
+  bottom: .6rem;
+  @include mq("tablet-small", max) {
+    left: 1.5rem;
+    bottom: 0.5rem;
+  }
 }

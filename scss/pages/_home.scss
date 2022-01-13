@@ -8,35 +8,117 @@
       display: flex;
       align-items: center;
       height: 100%;
+      @include mq("tablet-small", max) {
+        display: block;
+        height: initial;
+        align-items: initial;
+      }
     }
     .content-holder {
-      margin: 200px 0;
-      max-width: 740px;
+      margin: 20.0rem 0;
+      max-width: 74.0rem;
+      @include mq("tablet-small", max) {
+        padding-top: 16.5rem;
+        margin: 0;
+      }
+      h1 {
+        display: inline-block;
+        background: radial-gradient(#fff 0%, #A0A0A0 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        br {
+          display: none;
+        }
+        @include mq("tablet-small", max) {
+          br {
+            display: block;
+          }
+          margin: 0 0 1.5rem;
+        }
+        span {
+          color: $secondary;
+          -webkit-text-fill-color: $secondary;
+        }
+      }
       h2 {
-        margin: 0 0 16px;
+        display: inline-block;
+        background: radial-gradient(#fff 0%, #A0A0A0 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0 0 1.6rem;
+        span {
+          color: $secondary;
+          -webkit-text-fill-color: $secondary;
+        }
       }
       p {
-        font-size: 30px;
-        margin: 0 0 16px;
+        font-size: 3.0rem;
+        margin: 0 0 1.6rem;
+        @include mq("desktop-small", max) {
+          font-size: 2.4rem;
+        }
+        @include mq("tablet-small", max) {
+          font-size: 1.8rem;
+        }
+        &.text-lg {
+          @include mq("tablet-small", max) {
+            font-size: 2.4rem;
+          }
+        }
       }
       .learn-more-lnk {
         font-family: 'Rajdhani';
-        font-size: 30px;
+        font-size: 3.0rem;
         color: $cyan;
+        @include mq("desktop-small", max) {
+          font-size: 2.4rem;;
+        }
+        @include mq("tablet-small", max) {
+          font-size: 1.8rem;
+        }
       }
     }
   }
   &.slider {
+    .container {
+      @include mq("desktop-small", max) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      @include mq("tablet-small", max) {
+        display: block;
+        align-items: initial;
+        height: auto;
+      }
+    }
     .content-holder {
-      padding-top: 250px;
+      padding-top: 25.0rem;
+      @include mq("desktop", max) {
+        padding-top: 18.0rem;
+      }
+      @include mq("desktop-small", max) {
+        padding-top: 0;
+      }
+      @include mq("tablet-small", max) {
+        padding-top: 16.5rem;
+      }
       .slider-holder {
         .slick-list {
           overflow: visible;
         }
         .single-slide {
           width: 40vh;
-          max-width: 420px;
-          padding: 0 40px 0 0;
+          max-width: 42.0rem;
+          padding: 0 4.0rem 0 0;
+          @include mq("desktop", max) {
+            max-width: 35rem;
+          }
+          @include mq("tablet-small", max) {
+            width: 90vw;
+            max-width: 28rem;
+            padding-right: 2.0rem;
+          }
           .slide-inner {
             border: 1px solid #707070;
             .image-holder {
@@ -45,59 +127,114 @@
               font-size: 0;
             }
             .details {
-              margin: 18px 0 15px;
-              padding: 0 20px;
+              margin: 1.8rem 0 1.5rem;
+              padding: 0 2.0rem;
               display: flex;
               align-items: center;
               justify-content: space-between;
+              @include mq("desktop", max) {
+                margin: 1.2rem 0;
+                padding: 0 1.0rem;
+              }
               .user {
                 display: flex;
                 align-items: center;
                 .avatar-holder {
-                  width: 26px;
-                  height: 26px;
-                  margin-right: 8px;
+                  width: 2.6rem;
+                  height: 2.6rem;
+                  margin-right: .8rem;
                   font-size: 0;
                   background-color: $white;
                   border: 1px solid #707070;
+                  @include mq("desktop", max) {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    margin-right: 0.5rem;
+                  }
                 }
                 .name {
-                  margin-right: 10px;
-                  font-size: 20px;
+                  margin-right: 1.0rem;
+                  font-size: 2.0rem;
                   color: $white;
+                  @include mq("desktop", max) {
+                    font-size: 1.6rem;
+                    margin-right: 0.5rem;
+                  }
+                  @include mq("tablet-small", max) {
+                    font-size: 1.3rem;
+                  }                  
                 }
                 .site {
                   display: block;
-                  font-size: 14px;
+                  font-size: 1.4rem;
                   font-family: 'Rajdhani';
                   color: $cyan;
+                  @include mq("desktop", max) {
+                    font-size: 1.2rem;
+                  }
+                  @include mq("tablet-small", max) {
+                    font-size: 0.9rem;
+                  }
                 }
               }
               .price {
                 display: flex;
                 align-items: center;
                 font-family: 'Rajdhani';
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: 700;
                 color: #404040;
+                @include mq("desktop", max) {
+                  font-size: 1.2rem;
+                }
+                @include mq("tablet-small", max) {
+                  font-size: 1.1rem;
+                }
+                @include mq("tablet-small", max) {
+                  font-size: 0.9rem;
+                }
                 span {
                   color: #20F088;
-                  font-size: 20px;
+                  font-size: 2.0rem;
                   font-weight: 400;
-                  margin-left: 6px;
+                  margin-left: .6rem;
+                  @include mq("desktop", max) {
+                    font-size: 1.6rem;
+                  }
+                  @include mq("tablet-small", max) {
+                    font-size: 1.3rem;
+                    margin-left: 0.5rem;
+                  }
                 }
               }
             }
             > p {
-              padding: 0 20px 20px;
+              padding: 0 2.0rem 2.0rem;
+              @include mq("desktop", max) {
+                padding: 0 1.0rem 1.0rem
+              }
+              @include mq("tablet-small", max) {
+                font-size: 1.1rem;
+              }
             }
           }
         }
       }
       .slider-footer {
-        margin: 40px 0 0;
-        font-size: 30px;
+        margin: 4.0rem 0 0;
+        font-size: 3.0rem;
         color: $white;
+        @include mq("desktop", max) {
+          margin-top: 2.0rem;
+          font-size: 2.0rem;
+        }
+        @include mq("tablet-small", max) {
+          margin-top: 5.0rem;
+          font-size: 1.8rem;
+        }
+        @media (max-width: 360px) {
+          margin-top: 2.0rem;
+        }
         a {
           color: $cyan;
         }
@@ -106,15 +243,38 @@
   }
   &.cards {
     .content-holder {
-      padding-top: 320px;
+      padding-top: 32.0rem;
+      @include mq("desktop", max) {
+        padding-top: 16.5rem;
+      }
       h3 {
-        margin: 0 0 24px;
+        display: inline-block;
+        background: radial-gradient(#fff 0%, #A0A0A0 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0 0 2.4rem;
         span {
           color: $secondary;
+          -webkit-text-fill-color: $secondary;
+        }
+        br {
+          display: none;
+        }
+        @include mq("tablet-small", max) {
+          margin-bottom: 1.6rem;
+          br {
+            display: block;
+          }
         }
       }
       p {
-        font-size: 30px;
+        font-size: 3.0rem;
+        @include mq("desktop-small", max) {
+          font-size: 2.4rem;;
+        }
+        @include mq("tablet-small", max) {
+          font-size: 1.8rem;
+        }
         a {
           color: $cyan;
         }
@@ -123,38 +283,93 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 80px 0 0;
+        margin: 8.0rem 0 0;
+        @include mq("tablet-small", max) {
+          max-height: calc(100vh - 370px);
+          overflow: scroll;
+        }
+        @include mq("desktop", max) {
+          margin-top: 5.0rem;
+        }
+        @include mq("tablet-small", max) {
+          margin-top: 2.0rem;
+        }
         .card {
           display: flex;
           align-items: flex-end;
           justify-content: space-between;
-          width: calc(25% - 24px);
-          padding: 30px 35px;
-          border-radius: 5px;
+          width: calc(25% - 2.4rem);
+          padding: 3.0rem 3.5rem;
+          border-radius: .5rem;
           border: 1px solid #707070;
+          @include mq("desktop", max) {
+            padding: 2.0rem;
+          }
+          @include mq("desktop-small", max) {
+            width: calc(50% - 1.2rem);
+            margin: 0 0 1.6rem;
+          }
+          @include mq("tablet-small", max) {
+            width: 100%;
+            margin: 0 0 2.0rem;
+          }
           .details {
-            max-width: calc(100% - 100px);
+            max-width: calc(100% - 10.0rem);
+            @include mq("desktop", max) {
+              max-width: calc(100% - 6rem);
+            }
+            @include mq("tablet-small", max) {
+              display: flex;
+              align-items: center;
+            }
             .avatar-holder {
-              width: 50px;
-              height: 50px;
+              width: 5.0rem;
+              height: 5.0rem;
               background-color: white;
               border: 1px solid #707070;
-              margin: 0 0 10px;
+              margin: 0 0 1.0rem;
+              @include mq("desktop", max) {
+                width: 3.8rem;
+                height: 3.8rem;
+              }
+              @include mq("tablet-small", max) {
+                margin-bottom: 0;
+                margin-right: 1.6rem;
+              }
             }
             p {
-              font-size: 30px;
+              font-size: 3.0rem;
               line-height: 1;
+              @include mq("desktop", max) {
+                font-size: 2.4rem;
+              }
+              @include mq("tablet-small", max) {
+                font-size: 1.8rem;;
+              }
             }
           }
           .link {
             display: flex;
             align-items: center;
             font-family: 'Rajdhani';
-            font-size: 30px;
+            font-size: 3.0rem;
             color: $cyan;
+            @include mq("desktop", max) {
+              font-size: 2.4rem;
+            }
+            @include mq("tablet-small", max) {
+              font-size: 1.8rem;
+            }
             i {
-              font-size: 16px;
-              margin-left: 8px;
+              font-size: 1.6rem;
+              margin-left: .8rem;
+              @include mq("desktop", max) {
+                font-size: 1.4rem;
+                margin-left: .5rem;
+              }
+              @include mq("tablet-small", max) {
+                font-size: 1.2rem;
+              }
             }
           }
         }
