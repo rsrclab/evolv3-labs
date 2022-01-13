@@ -17,6 +17,7 @@
     var myFullPage = $('#fullpage').fullpage({
       anchors: ['intro', 'portfolio', 'life', 'mission', 'sev', 'fund', 'team'],
       menu: '#menu',
+      normalScrollElements: '.slider-holder',
       onLeave: function(origin, destination, direction){
         var leavingSection = this;
 
@@ -43,7 +44,7 @@
       infinite: false,
       arrows: false,
       adaptiveHeight: false,
-      variableWidth: true
+      variableWidth: true,
     });
 
   });
