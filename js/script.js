@@ -17,10 +17,10 @@
     var myFullPage = $('#fullpage').fullpage({
       anchors: ['intro', 'portfolio', 'life', 'mission', 'sev', 'fund', 'team'],
       menu: '#menu',
-      normalScrollElements: '.slider-holder',
+      normalScrollElements: '.slider-holder, .cards-holder',
       onLeave: function(origin, destination, direction){
         var leavingSection = this;
-
+        $('.section.intro .image-holder img.active').removeClass('active');
         // Handling Menu and Logo positions
         if(origin.index == 0 && direction =='down'){
           $('.header-nav').fadeIn();
@@ -36,7 +36,10 @@
           $('.page-media .section-media[media-anchor=' + destination.anchor + ']').addClass('active');
           $('.page-media .section-media:not([media-anchor=' + destination.anchor + '])').removeClass('active');
         }
-      }
+      },
+      afterLoad: function(origin, destination, direction){
+        $('.section[data-anchor=' + destination.anchor + '] .image-holder img').addClass('active');
+      },
     });
     
     $('.section.slider .slider-holder').slick({

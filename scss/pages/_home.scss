@@ -109,6 +109,13 @@
     .image-holder {
       margin: 0 auto;
       max-width: calc(100% - 65.0rem);
+      img {
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        &.active {
+          opacity: 1;
+        }
+      }
       @include mq("desktop", max) {
         max-width: calc(100% - 55.0rem);
       }
@@ -288,7 +295,7 @@
       @include mq("desktop", max) {
         padding-top: 16.5rem;
       }
-      h3 {
+      h2 {
         display: inline-block;
         background: radial-gradient(#fff 0%, #A0A0A0 50%);
         -webkit-background-clip: text;

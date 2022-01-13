@@ -653,6 +653,11 @@ p {
 .section.intro .image-holder {
   margin: 0 auto;
   max-width: calc(100% - 65.0rem); }
+  .section.intro .image-holder img {
+    transition: all 0.3s ease-in-out;
+    opacity: 0; }
+    .section.intro .image-holder img.active {
+      opacity: 1; }
   @media only screen and (max-width: 1200px) {
     .section.intro .image-holder {
       max-width: calc(100% - 55.0rem); } }
@@ -808,21 +813,21 @@ p {
   @media only screen and (max-width: 1200px) {
     .section.cards .content-holder {
       padding-top: 16.5rem; } }
-  .section.cards .content-holder h3 {
+  .section.cards .content-holder h2 {
     display: inline-block;
     background: radial-gradient(#fff 0%, #A0A0A0 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 0 2.4rem; }
-    .section.cards .content-holder h3 span {
+    .section.cards .content-holder h2 span {
       color: #2DF8D9;
       -webkit-text-fill-color: #2DF8D9; }
-    .section.cards .content-holder h3 br {
+    .section.cards .content-holder h2 br {
       display: none; }
     @media only screen and (max-width: 640px) {
-      .section.cards .content-holder h3 {
+      .section.cards .content-holder h2 {
         margin-bottom: 1.6rem; }
-        .section.cards .content-holder h3 br {
+        .section.cards .content-holder h2 br {
           display: block; } }
   .section.cards .content-holder p {
     font-size: 3.0rem; }
