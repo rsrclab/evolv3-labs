@@ -274,10 +274,8 @@ p {
       .header-nav .container {
         padding: 0 1.0rem; } }
     .header-nav__items {
-      display: flex; }
-      @media only screen and (max-width: 1024px) {
-        .header-nav__items {
-          flex-wrap: wrap; } }
+      display: flex;
+      flex-wrap: wrap; }
     .header-nav__item:first-child {
       display: none; }
     .header-nav__item:not(:last-child) {

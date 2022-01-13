@@ -189,9 +189,7 @@
     }
     &__items {
       display: flex;
-      @include mq("desktop-small", max) {
-        flex-wrap: wrap;
-      }
+      flex-wrap: wrap;
     }
     &__item {
       &:first-child {
