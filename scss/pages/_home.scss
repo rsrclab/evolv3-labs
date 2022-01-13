@@ -29,19 +29,25 @@
     .container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       height: 100%;
-      @include mq("tablet-small", max) {
+      
+      @include mq("tablet-wide", max) {
         display: block;
         height: initial;
         align-items: initial;
       }
     }
     .content-holder {
-      margin: 20.0rem 0;
+      margin: 15.0rem 0;
       max-width: 74.0rem;
-      @include mq("tablet-small", max) {
+      @include mq("desktop", max) {
+        max-width: 56.0rem;
+      }
+      @include mq("tablet-wide", max) {
+        max-width: initial;
         padding-top: 16.5rem;
-        margin: 0;
+        margin: 0 0 4.0rem;
       }
       h1 {
         display: inline-block;
@@ -74,10 +80,10 @@
         }
       }
       p {
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         margin: 0 0 1.6rem;
         @include mq("desktop-small", max) {
-          font-size: 2.4rem;
+          font-size: 2.0rem;
         }
         @include mq("tablet-small", max) {
           font-size: 1.8rem;
@@ -90,13 +96,28 @@
       }
       .learn-more-lnk {
         font-family: 'Rajdhani';
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         color: $cyan;
         @include mq("desktop-small", max) {
-          font-size: 2.4rem;;
+          font-size: 2.0rem;;
         }
         @include mq("tablet-small", max) {
           font-size: 1.8rem;
+        }
+      }
+    }
+    .image-holder {
+      margin: 0 auto;
+      max-width: calc(100% - 74.0rem);
+      @include mq("desktop", max) {
+        max-width: calc(100% - 60.0rem);
+      }
+      @include mq("tablet-wide", max) {
+        width: 100%;
+        max-width: initial;
+        text-align: center;
+        img {
+          max-height: calc(100vh - 46rem);
         }
       }
     }
@@ -304,7 +325,7 @@
         flex-wrap: wrap;
         margin: 8.0rem 0 0;
         @include mq("tablet-small", max) {
-          max-height: calc(100vh - 370px);
+          max-height: calc(100vh - 430px);
           overflow: scroll;
         }
         @include mq("desktop", max) {

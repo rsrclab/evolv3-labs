@@ -1,8 +1,5 @@
 :root {
   font-size: 10px; }
-  @media (min-width: 1921px) {
-    :root {
-      font-size: 12px; } }
 
 html,
 body {
@@ -51,11 +48,11 @@ h6 {
 
 h1, .heading-1 {
   font-family: 'Texgyreadventor';
-  font-size: 7.0rem;
+  font-size: 5.4rem;
   font-weight: 400; }
   @media only screen and (max-width: 1024px) {
     h1, .heading-1 {
-      font-size: 5.6rem; } }
+      font-size: 4.8rem; } }
   @media only screen and (max-width: 640px) {
     h1, .heading-1 {
       font-size: 4.0rem;
@@ -63,11 +60,11 @@ h1, .heading-1 {
 
 h2, .heading-2 {
   font-family: 'Texgyreadventor';
-  font-size: 6.0rem;
+  font-size: 4.5rem;
   font-weight: 400; }
   @media only screen and (max-width: 1024px) {
     h2, .heading-2 {
-      font-size: 4.8rem; } }
+      font-size: 4.0rem; } }
   @media only screen and (max-width: 640px) {
     h2, .heading-2 {
       font-size: 3.0rem;
@@ -75,11 +72,11 @@ h2, .heading-2 {
 
 h3, .heading-3 {
   font-family: 'Texgyreadventor';
-  font-size: 5.0rem;
+  font-size: 3.8rem;
   font-weight: 400; }
   @media only screen and (max-width: 1024px) {
     h3, .heading-3 {
-      font-size: 3.6rem; } }
+      font-size: 3.3rem; } }
   @media only screen and (max-width: 640px) {
     h3, .heading-3 {
       font-size: 3.0rem;
@@ -118,22 +115,18 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 2.0rem;
-  z-index: 10; }
-  @media only screen and (max-width: 1200px) {
-    .header {
-      align-items: center; } }
+  padding-top: 1.5rem;
+  z-index: 10;
+  align-items: center; }
   @media only screen and (max-width: 640px) {
     .header {
       padding-top: 0.5rem; } }
   .header-logo {
     display: flex;
-    margin-left: 4.5rem;
-    z-index: 5; }
-    @media only screen and (max-width: 1200px) {
-      .header-logo {
-        margin-left: 2.0rem;
-        align-items: flex-end; } }
+    margin-left: 3rem;
+    z-index: 5;
+    margin-left: 2.0rem;
+    align-items: flex-end; }
     @media only screen and (max-width: 640px) {
       .header-logo {
         display: block; } }
@@ -149,7 +142,6 @@ p {
           .header-logo a img {
             width: 8.0rem; } }
     .header-logo__text {
-      margin-top: 3.5rem;
       font-family: 'Texgyreadventor';
       font-size: 2.2rem; }
       @media only screen and (max-width: 1200px) {
@@ -161,16 +153,13 @@ p {
       .header-logo__text span {
         color: #2DF8D9; }
   .header-notification {
-    margin: 2.5rem 2.0rem 0 auto;
+    margin: 0 2.0rem 0 auto;
     padding: 1.1rem 2.5rem;
     background-color: #141414;
     border-radius: 2.0rem;
     font-family: 'Rajdhani';
     font-size: 1.7rem;
     font-weight: 700; }
-    @media only screen and (max-width: 1200px) {
-      .header-notification {
-        margin-top: 0; } }
     @media only screen and (max-width: 640px) {
       .header-notification {
         font-size: 1.2rem;
@@ -260,13 +249,13 @@ p {
   .header-nav {
     display: none;
     width: 100%;
-    margin-top: 6.0rem; }
+    margin-top: 3.0rem; }
     @media only screen and (max-width: 1200px) {
       .header-nav {
-        margin-top: 3.0rem; } }
+        margin-top: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .header-nav {
-        margin-top: 2.5rem; } }
+        margin-top: 1.5rem; } }
     @media only screen and (max-width: 640px) {
       .header-nav .container {
         padding: 0 1.0rem; } }
@@ -276,24 +265,27 @@ p {
     .header-nav__item:first-child {
       display: none; }
     .header-nav__item:not(:last-child) {
-      margin-right: 3.2rem; }
+      margin-right: 2.5rem; }
       @media only screen and (max-width: 1024px) {
         .header-nav__item:not(:last-child) {
-          margin-right: 2.0rem; } }
+          margin-right: 1.5rem; } }
       @media only screen and (max-width: 640px) {
         .header-nav__item:not(:last-child) {
           margin: 0 1.0rem; } }
+    @media only screen and (max-width: 640px) {
+      .header-nav__item:last-child {
+        margin: 0 1.0rem; } }
     .header-nav__item a {
       color: #363636;
       font-family: 'Texgyreadventor';
-      font-size: 3.0rem;
+      font-size: 2.0rem;
       transition: all 0.3s ease-in-out; }
       @media only screen and (max-width: 1200px) {
         .header-nav__item a {
-          font-size: 2.0rem; } }
+          font-size: 1.6rem; } }
       @media only screen and (max-width: 1024px) {
         .header-nav__item a {
-          font-size: 1.8rem; } }
+          font-size: 1.5rem; } }
       @media (max-width: 360px) {
         .header-nav__item a {
           font-size: 1.4rem; } }
@@ -305,13 +297,12 @@ p {
     .header-nav__item.active a {
       color: #fff; }
   .header .hamburger {
-    margin-top: 3.0rem;
-    margin-right: 4.5rem;
+    margin-top: 0;
+    margin-right: 3rem;
     z-index: 5; }
     @media only screen and (max-width: 1200px) {
       .header .hamburger {
-        margin-right: 2.0rem;
-        margin-top: 0; } }
+        margin-right: 2.0rem; } }
 
 .footer {
   position: fixed;
@@ -595,19 +586,24 @@ p {
 .section.intro .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 992px) {
     .section.intro .container {
       display: block;
       height: initial;
       align-items: initial; } }
 .section.intro .content-holder {
-  margin: 20.0rem 0;
+  margin: 15.0rem 0;
   max-width: 74.0rem; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 1200px) {
     .section.intro .content-holder {
+      max-width: 56.0rem; } }
+  @media only screen and (max-width: 992px) {
+    .section.intro .content-holder {
+      max-width: initial;
       padding-top: 16.5rem;
-      margin: 0; } }
+      margin: 0 0 4.0rem; } }
   .section.intro .content-holder h1 {
     display: inline-block;
     background: radial-gradient(#fff 0%, #A0A0A0 50%);
@@ -633,11 +629,11 @@ p {
       color: #2DF8D9;
       -webkit-text-fill-color: #2DF8D9; }
   .section.intro .content-holder p {
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     margin: 0 0 1.6rem; }
     @media only screen and (max-width: 1024px) {
       .section.intro .content-holder p {
-        font-size: 2.4rem; } }
+        font-size: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .section.intro .content-holder p {
         font-size: 1.8rem; } }
@@ -646,14 +642,27 @@ p {
         font-size: 2.4rem; } }
   .section.intro .content-holder .learn-more-lnk {
     font-family: 'Rajdhani';
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     color: #05C5FF; }
     @media only screen and (max-width: 1024px) {
       .section.intro .content-holder .learn-more-lnk {
-        font-size: 2.4rem; } }
+        font-size: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .section.intro .content-holder .learn-more-lnk {
         font-size: 1.8rem; } }
+.section.intro .image-holder {
+  margin: 0 auto;
+  max-width: calc(100% - 74.0rem); }
+  @media only screen and (max-width: 1200px) {
+    .section.intro .image-holder {
+      max-width: calc(100% - 60.0rem); } }
+  @media only screen and (max-width: 992px) {
+    .section.intro .image-holder {
+      width: 100%;
+      max-width: initial;
+      text-align: center; }
+      .section.intro .image-holder img {
+        max-height: calc(100vh - 46rem); } }
 .section.slider .container {
   display: flex;
   align-items: center;
@@ -830,7 +839,7 @@ p {
     margin: 8.0rem 0 0; }
     @media only screen and (max-width: 640px) {
       .section.cards .content-holder .cards-holder {
-        max-height: calc(100vh - 370px);
+        max-height: calc(100vh - 430px);
         overflow: scroll; } }
     @media only screen and (max-width: 1200px) {
       .section.cards .content-holder .cards-holder {

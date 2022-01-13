@@ -32,10 +32,10 @@
 // Typography mixins
 @mixin heading1() {
   font-family: 'Texgyreadventor';
-  font-size: 7.0rem;
+  font-size: 5.4rem;
   font-weight: 400;
   @include mq("desktop-small", max) {
-    font-size: 5.6rem;
+    font-size: 4.8rem;
   }
   @include mq("tablet-small", max) {
     font-size: 4.0rem;
@@ -44,10 +44,10 @@
 }
 @mixin heading2() {
   font-family: 'Texgyreadventor';
-  font-size: 6.0rem;
+  font-size: 4.5rem;
   font-weight: 400;
   @include mq("desktop-small", max) {
-    font-size: 4.8rem;
+    font-size: 4.0rem;
   }
   @include mq("tablet-small", max) {
     font-size: 3.0rem;
@@ -56,10 +56,10 @@
 }
 @mixin heading3() {
   font-family: 'Texgyreadventor';
-  font-size: 5.0rem;
+  font-size: 3.8rem;
   font-weight: 400;
   @include mq("desktop-small", max) {
-    font-size: 3.6rem;
+    font-size: 3.3rem;
   }
   @include mq("tablet-small", max) {
     font-size: 3.0rem;
