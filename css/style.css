@@ -302,6 +302,9 @@ p {
           font-size: 1.4rem; } }
     .header-nav__item:not(.active):hover a {
       color: #A0A0A0; }
+      @media only screen and (max-width: 640px) {
+        .header-nav__item:not(.active):hover a {
+          color: #363636; } }
     .header-nav__item.active a {
       color: #fff; }
   .header .hamburger {

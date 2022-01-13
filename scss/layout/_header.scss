@@ -222,6 +222,9 @@
       &:not(.active):hover {
         a {
           color: #A0A0A0;
+          @include mq("tablet-small", max) {
+            color: #363636;
+          }
         }
       }
       &.active {
