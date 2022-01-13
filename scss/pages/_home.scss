@@ -40,7 +40,7 @@
     }
     .content-holder {
       margin: 15.0rem 0;
-      max-width: 70.0rem;
+      max-width: 60.0rem;
       @include mq("desktop", max) {
         max-width: 50.0rem;
       }
@@ -80,10 +80,10 @@
         }
       }
       p {
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         margin: 0 0 1.6rem;
         @include mq("desktop-small", max) {
-          font-size: 2.4rem;
+          font-size: 2.0rem;
         }
         @include mq("tablet-small", max) {
           font-size: 1.8rem;
@@ -96,10 +96,10 @@
       }
       .learn-more-lnk {
         font-family: 'Rajdhani';
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         color: $cyan;
         @include mq("desktop-small", max) {
-          font-size: 2.4rem;;
+          font-size: 2.0rem;;
         }
         @include mq("tablet-small", max) {
           font-size: 1.8rem;
@@ -108,7 +108,7 @@
     }
     .image-holder {
       margin: 0 auto;
-      max-width: calc(100% - 75.0rem);
+      max-width: calc(100% - 65.0rem);
       @include mq("desktop", max) {
         max-width: calc(100% - 55.0rem);
       }
@@ -149,14 +149,11 @@
           overflow: visible;
         }
         .single-slide {
-          width: 23vw;
+          width: 40vh;
+          max-width: 42.0rem;
           padding: 0 4.0rem 0 0;
           @include mq("desktop", max) {
             max-width: 35rem;
-            width: 33vw;
-          }
-          @include mq("desktop", max) {
-            width: 45vw;
           }
           @include mq("tablet-small", max) {
             width: 90vw;
@@ -382,10 +379,10 @@
               }
             }
             p {
-              font-size: 3.0rem;
+              font-size: 2.4rem;
               line-height: 1.1;
               @include mq("desktop", max) {
-                font-size: 2.4rem;
+                font-size: 2.0rem;
               }
               @include mq("tablet-small", max) {
                 font-size: 1.8rem;;
@@ -396,16 +393,16 @@
             display: flex;
             align-items: center;
             font-family: 'Rajdhani';
-            font-size: 3.0rem;
+            font-size: 2.4rem;
             color: $cyan;
             @include mq("desktop", max) {
-              font-size: 2.4rem;
+              font-size: 2.0rem;
             }
             @include mq("tablet-small", max) {
               font-size: 1.8rem;
             }
             i {
-              font-size: 2.0rem;
+              font-size: 1.6rem;
               margin-left: .8rem;
               @include mq("desktop", max) {
                 font-size: 1.4rem;

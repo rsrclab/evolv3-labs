@@ -278,11 +278,11 @@ p {
     .header-nav__item a {
       color: #363636;
       font-family: 'Texgyreadventor';
-      font-size: 3.0rem;
+      font-size: 2.4rem;
       transition: all 0.3s ease-in-out; }
       @media only screen and (max-width: 1200px) {
         .header-nav__item a {
-          font-size: 2.4rem; } }
+          font-size: 2.0rem; } }
       @media only screen and (max-width: 1024px) {
         .header-nav__item a {
           font-size: 1.8rem; } }
@@ -595,7 +595,7 @@ p {
       align-items: initial; } }
 .section.intro .content-holder {
   margin: 15.0rem 0;
-  max-width: 70.0rem; }
+  max-width: 60.0rem; }
   @media only screen and (max-width: 1200px) {
     .section.intro .content-holder {
       max-width: 50.0rem; } }
@@ -629,11 +629,11 @@ p {
       color: #2DF8D9;
       -webkit-text-fill-color: #2DF8D9; }
   .section.intro .content-holder p {
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     margin: 0 0 1.6rem; }
     @media only screen and (max-width: 1024px) {
       .section.intro .content-holder p {
-        font-size: 2.4rem; } }
+        font-size: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .section.intro .content-holder p {
         font-size: 1.8rem; } }
@@ -642,17 +642,17 @@ p {
         font-size: 2.4rem; } }
   .section.intro .content-holder .learn-more-lnk {
     font-family: 'Rajdhani';
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     color: #05C5FF; }
     @media only screen and (max-width: 1024px) {
       .section.intro .content-holder .learn-more-lnk {
-        font-size: 2.4rem; } }
+        font-size: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .section.intro .content-holder .learn-more-lnk {
         font-size: 1.8rem; } }
 .section.intro .image-holder {
   margin: 0 auto;
-  max-width: calc(100% - 75.0rem); }
+  max-width: calc(100% - 65.0rem); }
   @media only screen and (max-width: 1200px) {
     .section.intro .image-holder {
       max-width: calc(100% - 55.0rem); } }
@@ -686,15 +686,12 @@ p {
   .section.slider .content-holder .slider-holder .slick-list {
     overflow: visible; }
   .section.slider .content-holder .slider-holder .single-slide {
-    width: 23vw;
+    width: 40vh;
+    max-width: 42.0rem;
     padding: 0 4.0rem 0 0; }
     @media only screen and (max-width: 1200px) {
       .section.slider .content-holder .slider-holder .single-slide {
-        max-width: 35rem;
-        width: 33vw; } }
-    @media only screen and (max-width: 1200px) {
-      .section.slider .content-holder .slider-holder .single-slide {
-        width: 45vw; } }
+        max-width: 35rem; } }
     @media only screen and (max-width: 640px) {
       .section.slider .content-holder .slider-holder .single-slide {
         width: 90vw;
@@ -895,11 +892,11 @@ p {
               margin-bottom: 0;
               margin-right: 1.6rem; } }
         .section.cards .content-holder .cards-holder .card .details p {
-          font-size: 3.0rem;
+          font-size: 2.4rem;
           line-height: 1.1; }
           @media only screen and (max-width: 1200px) {
             .section.cards .content-holder .cards-holder .card .details p {
-              font-size: 2.4rem; } }
+              font-size: 2.0rem; } }
           @media only screen and (max-width: 640px) {
             .section.cards .content-holder .cards-holder .card .details p {
               font-size: 1.8rem; } }
@@ -907,16 +904,16 @@ p {
         display: flex;
         align-items: center;
         font-family: 'Rajdhani';
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         color: #05C5FF; }
         @media only screen and (max-width: 1200px) {
           .section.cards .content-holder .cards-holder .card .link {
-            font-size: 2.4rem; } }
+            font-size: 2.0rem; } }
         @media only screen and (max-width: 640px) {
           .section.cards .content-holder .cards-holder .card .link {
             font-size: 1.8rem; } }
         .section.cards .content-holder .cards-holder .card .link i {
-          font-size: 2.0rem;
+          font-size: 1.6rem;
           margin-left: .8rem; }
           @media only screen and (max-width: 1200px) {
             .section.cards .content-holder .cards-holder .card .link i {
