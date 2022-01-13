@@ -95,6 +95,12 @@
   object-fit: cover;
 }
 
+@mixin backgroundElement {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @function vw($px-vw, $base-vw: 1600px) {
   @return ($px-vw * 100vw) / $base-vw;
 }

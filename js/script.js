@@ -23,10 +23,17 @@
         // Handling Menu and Logo positions
         if(origin.index == 0 && direction =='down'){
           $('.header-nav').fadeIn();
-
         }
         else if(origin.index == 1 && direction == 'up'){
           $('.header-nav').fadeOut();
+        }
+        
+        // Handling background
+        if(destination.anchor) {
+          $('.page-bg .section-bg[bg-anchor=' + destination.anchor + ']').addClass('active');
+          $('.page-bg .section-bg:not([bg-anchor=' + destination.anchor + '])').removeClass('active');
+          $('.page-media .section-media[media-anchor=' + destination.anchor + ']').addClass('active');
+          $('.page-media .section-media:not([media-anchor=' + destination.anchor + '])').removeClass('active');
         }
       }
     });
