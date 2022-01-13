@@ -103,11 +103,9 @@
   }
   &.slider {
     .container {
-      @include mq("desktop-small", max) {
-        display: flex;
-        align-items: center;
-        height: 100%;
-      }
+      display: flex;
+      align-items: center;
+      height: 100%;
       @include mq("tablet-small", max) {
         display: block;
         align-items: initial;
@@ -115,7 +113,6 @@
       }
     }
     .content-holder {
-      padding-top: 25.0rem;
       @include mq("desktop", max) {
         padding-top: 18.0rem;
       }
