@@ -135,6 +135,7 @@
     }
     .content-holder {
       max-width: 100%;
+      padding-top: 10.0rem;
       @include mq("desktop", max) {
         padding-top: 18.0rem;
       }

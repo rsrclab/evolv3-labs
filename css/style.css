@@ -673,7 +673,8 @@ p {
       align-items: initial;
       height: auto; } }
 .section.slider .content-holder {
-  max-width: 100%; }
+  max-width: 100%;
+  padding-top: 10.0rem; }
   @media only screen and (max-width: 1200px) {
     .section.slider .content-holder {
       padding-top: 18.0rem; } }
