@@ -345,7 +345,7 @@
           @include mq("desktop", max) {
             padding: 2.0rem;
           }
-          @include mq("desktop-small", max) {
+          @media (max-width: 1500px) {
             width: calc(50% - 1.2rem);
             margin: 0 0 1.6rem;
           }
@@ -378,10 +378,10 @@
               }
             }
             p {
-              font-size: 3.0rem;
-              line-height: 1;
+              font-size: 2.4rem;
+              line-height: 1.1;
               @include mq("desktop", max) {
-                font-size: 2.4rem;
+                font-size: 2.0rem;
               }
               @include mq("tablet-small", max) {
                 font-size: 1.8rem;;
@@ -392,10 +392,10 @@
             display: flex;
             align-items: center;
             font-family: 'Rajdhani';
-            font-size: 3.0rem;
+            font-size: 2.4rem;
             color: $cyan;
             @include mq("desktop", max) {
-              font-size: 2.4rem;
+              font-size: 2.0rem;
             }
             @include mq("tablet-small", max) {
               font-size: 1.8rem;
