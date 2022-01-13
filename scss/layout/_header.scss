@@ -188,9 +188,9 @@
         display: none;
       }
       &:not(:last-child) {
-        margin-right: 2.5rem;
+        margin-right: 3.0rem;
         @include mq("desktop-small", max) {
-          margin-right: 1.5rem;
+          margin-right: 2.0rem;
         }
         @include mq("tablet-small", max) {
           margin: 0 1.0rem;

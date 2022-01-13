@@ -265,10 +265,10 @@ p {
     .header-nav__item:first-child {
       display: none; }
     .header-nav__item:not(:last-child) {
-      margin-right: 2.5rem; }
+      margin-right: 3.0rem; }
       @media only screen and (max-width: 1024px) {
         .header-nav__item:not(:last-child) {
-          margin-right: 1.5rem; } }
+          margin-right: 2.0rem; } }
       @media only screen and (max-width: 640px) {
         .header-nav__item:not(:last-child) {
           margin: 0 1.0rem; } }
