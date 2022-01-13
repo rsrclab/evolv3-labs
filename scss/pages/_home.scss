@@ -46,7 +46,7 @@
       }
       @include mq("tablet-wide", max) {
         max-width: initial;
-        padding-top: 16.5rem;
+        padding-top: 13.5rem;
         margin: 0 0 4.0rem;
       }
       h1 {
@@ -149,7 +149,7 @@
         padding-top: 0;
       }
       @include mq("tablet-small", max) {
-        padding-top: 16.5rem;
+        padding-top: 15rem;
       }
       .slider-holder {
         .slick-list {
@@ -293,7 +293,7 @@
     .content-holder {
       padding-top: 32.0rem;
       @include mq("desktop", max) {
-        padding-top: 16.5rem;
+        padding-top: 13.5rem;
       }
       h2 {
         display: inline-block;
@@ -333,7 +333,7 @@
         flex-wrap: wrap;
         margin: 8.0rem 0 0;
         @include mq("tablet-small", max) {
-          max-height: calc(100vh - 430px);
+          max-height: calc(100vh - 330px);
           overflow: scroll;
         }
         @include mq("desktop", max) {
