@@ -34,7 +34,7 @@
   font-family: 'Texgyreadventor';
   font-size: 5.4rem;
   font-weight: 400;
-  @include mq("desktop-small", max) {
+  @include mq("desktop-ultra", max) {
     font-size: 4.8rem;
   }
   @include mq("tablet-small", max) {
@@ -46,7 +46,7 @@
   font-family: 'Texgyreadventor';
   font-size: 4.5rem;
   font-weight: 400;
-  @include mq("desktop-small", max) {
+  @include mq("desktop-ultra", max) {
     font-size: 4.0rem;
   }
   @include mq("tablet-small", max) {
@@ -58,7 +58,7 @@
   font-family: 'Texgyreadventor';
   font-size: 3.8rem;
   font-weight: 400;
-  @include mq("desktop-small", max) {
+  @include mq("desktop-ultra", max) {
     font-size: 3.3rem;
   }
   @include mq("tablet-small", max) {

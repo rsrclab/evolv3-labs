@@ -116,6 +116,9 @@
           opacity: 1;
         }
       }
+      @include mq("desktop-ultra", max) {
+        width: 40.0rem;
+      }
       @include mq("desktop", max) {
         max-width: calc(100% - 55.0rem);
       }
@@ -272,7 +275,7 @@
         margin: 4.0rem 0 0;
         font-size: 3.0rem;
         color: $white;
-        @include mq("desktop", max) {
+        @include mq("desktop-ultra", max) {
           margin-top: 2.0rem;
           font-size: 2.0rem;
         }
@@ -292,6 +295,9 @@
   &.cards {
     .content-holder {
       padding-top: 32.0rem;
+      @include mq("desktop-ultra", max) {
+        padding-top: 20rem;
+      }
       @include mq("desktop", max) {
         padding-top: 13.5rem;
       }
@@ -336,7 +342,7 @@
           max-height: calc(100vh - 330px);
           overflow: scroll;
         }
-        @include mq("desktop", max) {
+        @include mq("desktop-ultra", max) {
           margin-top: 5.0rem;
         }
         @include mq("tablet-small", max) {
@@ -350,10 +356,10 @@
           padding: 3.0rem 3.5rem;
           border-radius: .5rem;
           border: 1px solid #707070;
-          @include mq("desktop", max) {
+          @include mq("desktop-ultra", max) {
             padding: 2.0rem;
           }
-          @media (max-width: 1500px) {
+          @include mq("desktop", max) {
             width: calc(50% - 1.2rem);
             margin: 0 0 1.6rem;
           }
@@ -363,7 +369,7 @@
           }
           .details {
             max-width: calc(100% - 10.0rem);
-            @include mq("desktop", max) {
+            @include mq("desktop-ultra", max) {
               max-width: calc(100% - 6rem);
             }
             @include mq("tablet-small", max) {
@@ -376,7 +382,7 @@
               background-color: white;
               border: 1px solid #707070;
               margin: 0 0 1.0rem;
-              @include mq("desktop", max) {
+              @include mq("desktop-ultra", max) {
                 width: 3.8rem;
                 height: 3.8rem;
               }
@@ -388,7 +394,7 @@
             p {
               font-size: 2.4rem;
               line-height: 1.1;
-              @include mq("desktop", max) {
+              @include mq("desktop-ultra", max) {
                 font-size: 2.0rem;
               }
               @include mq("tablet-small", max) {
@@ -402,7 +408,7 @@
             font-family: 'Rajdhani';
             font-size: 2.4rem;
             color: $cyan;
-            @include mq("desktop", max) {
+            @include mq("desktop-ultra", max) {
               font-size: 2.0rem;
             }
             @include mq("tablet-small", max) {
@@ -411,7 +417,7 @@
             i {
               font-size: 1.6rem;
               margin-left: .8rem;
-              @include mq("desktop", max) {
+              @include mq("desktop-ultra", max) {
                 font-size: 1.4rem;
                 margin-left: .5rem;
               }

@@ -30,7 +30,7 @@
       font-size: 0;
       img {
         width: 15rem;
-        @include mq("desktop", max) {
+        @include mq("desktop-ultra", max) {
           width: 10rem;
         }
         @include mq("tablet-small", max) {
@@ -41,7 +41,7 @@
     &__text {
       font-family: 'Texgyreadventor';
       font-size: 2.2rem;
-      @include mq("desktop", max) {
+      @include mq("desktop-ultra", max) {
         margin-top: 0;
       }
       @include mq("tablet-small", max) {
@@ -168,7 +168,7 @@
     display: none;
     width: 100%;
     margin-top: 3.0rem;
-    @include mq("desktop", max) {
+    @include mq("desktop-ultra", max) {
       margin-top: 2.0rem;
     }
     @include mq("tablet-small", max) {
@@ -206,7 +206,7 @@
         font-family: 'Texgyreadventor';
         font-size: 2.4rem;
         transition: all 0.3s ease-in-out;
-        @include mq("desktop", max) {
+        @include mq("desktop-ultra", max) {
           font-size: 2.0rem;
         }
         @include mq("desktop-small", max) {
@@ -235,7 +235,7 @@
     margin-top: 0;
     margin-right: 3rem;
     z-index: 5;
-    @include mq("desktop", max) {
+    @include mq("desktop-ultra", max) {
       margin-right: 2.0rem;
     }
   }
