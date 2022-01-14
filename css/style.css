@@ -836,10 +836,10 @@ p {
         .section.cards .content-holder h2 br {
           display: block; } }
   .section.cards .content-holder p {
-    font-size: 3.0rem; }
+    font-size: 2.4rem; }
     @media only screen and (max-width: 1024px) {
       .section.cards .content-holder p {
-        font-size: 2.4rem; } }
+        font-size: 2.0rem; } }
     @media only screen and (max-width: 640px) {
       .section.cards .content-holder p {
         font-size: 1.8rem; } }
