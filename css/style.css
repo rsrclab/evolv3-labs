@@ -696,8 +696,11 @@ p {
     .section.slider .content-holder {
       padding-top: 15rem; } }
   .section.slider .content-holder .slider-holder {
-    width: 100%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+    .section.slider .content-holder .slider-holder.shown {
+      opacity: 1; }
     .section.slider .content-holder .slider-holder .single-slide .slide-inner {
       width: 40rem;
       margin: auto;

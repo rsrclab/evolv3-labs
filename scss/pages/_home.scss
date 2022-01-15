@@ -165,8 +165,12 @@
         padding-top: 15rem;
       }
       .slider-holder {
-        width: 100%;
         margin-bottom: 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        &.shown {
+          opacity: 1;
+        }
         .single-slide {
           .slide-inner {
             width: 40rem;

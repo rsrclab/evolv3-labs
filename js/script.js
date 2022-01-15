@@ -11,8 +11,18 @@
       infinite: true,
       arrows: true,
       dots: true,
+      centerMode: true,
       fade: true,
+      autoplay: true,
     });
+    $('.section.slider .slider-holder').slick('slickNext');
+    $('.section.slider .slider-holder').on('afterChange', function(event, slick, currentSlide, nextSlide){
+      $('.section.slider .slider-holder').addClass('shown');
+    });
+
+    setTimeout(() => {
+      $('.section.slider .slider-holder').slick('slickGoTo',0);
+    }, 500);
 
     $('.hamburger').on('click', function () {
       $(this).toggleClass('open');
@@ -47,6 +57,7 @@
         setTimeout((target) => {
           $('.section[data-anchor=' + target + '] .inner-section').fadeIn(500, 'swing');
         }, 500, destination.anchor);
+        
       },
       afterLoad: function (origin, destination, direction) {
       },
