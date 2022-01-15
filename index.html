@@ -17,7 +17,17 @@
   <header class="header">
     <div class="header-logo">
       <a href="#"><img src="./images/logo.png" alt="Evolv3"></a>
-      <p class="header-logo__text"><span>Life3</span> Ventures + R&D</p>
+    </div>
+    <div class="header-nav">
+      <ul class="header-nav__items" id="menu">
+        <li data-menuanchor="intro" class="header-nav__item active"><a href="#intro">Intro</a></li>
+        <li data-menuanchor="portfolio" class="header-nav__item"><a href="#portfolio">Portfolio</a></li>
+        <li data-menuanchor="life" class="header-nav__item"><a href="#life">What is Life3?</a></li>
+        <li data-menuanchor="mission" class="header-nav__item"><a href="#mission">Our Mission</a></li>
+        <li data-menuanchor="sev" class="header-nav__item"><a href="#sev">Seed $EV3</a></li>
+        <li data-menuanchor="fund" class="header-nav__item"><a href="#fund">Evolv3.Fund</a></li>
+        <li data-menuanchor="team" class="header-nav__item"><a href="#team">Join Team</a></li>
+      </ul>
     </div>
     <div class="header-notification">
       APY <span>+345%</span>
@@ -68,21 +78,10 @@
         </ul>
       </div>
     </div>
-    <div class="header-nav">
-      <div class="container">
-        <ul class="header-nav__items" id="menu">
-          <li data-menuanchor="intro" class="header-nav__item active"><a href="#intro">Intro</a></li>
-          <li data-menuanchor="portfolio" class="header-nav__item"><a href="#portfolio">Portfolio</a></li>
-          <li data-menuanchor="life" class="header-nav__item"><a href="#life">What is Life3?</a></li>
-          <li data-menuanchor="mission" class="header-nav__item"><a href="#mission">Our Mission</a></li>
-          <li data-menuanchor="sev" class="header-nav__item"><a href="#sev">Seed $EV3</a></li>
-          <li data-menuanchor="fund" class="header-nav__item"><a href="#fund">Evolv3.Fund</a></li>
-          <li data-menuanchor="team" class="header-nav__item"><a href="#team">Join Team</a></li>
-        </ul>
-      </div>
-    </div>
   </header>
   <div class="page-bg">
+    <div class="section-bg active" bg-anchor="intro" style="background-color: black"></div>
+    <div class="section-bg" bg-anchor="portfolio" style="background-image: radial-gradient(#242636, #000000)"></div>
     <div class="section-bg" bg-anchor="life" style="background-image: radial-gradient(#242636D0, #000000D0), url(./images/background_life.jpg)"></div>
     <div class="section-bg" bg-anchor="mission" style="background-image: radial-gradient(#242636D0, #000000D0), url(./images/background_mission.jpg)"></div>
     <div class="section-bg" bg-anchor="sev" style="background-image: radial-gradient(#242636D0, #000000D0), url(./images/background_sev.jpg)"></div>
@@ -90,17 +89,18 @@
     <div class="section-bg" bg-anchor="team" style="background-image: radial-gradient(#242636D0, #000000D0), url(./images/background_team.jpg)"></div>
   </div>
   <main class="main" id="fullpage">
-    <section class="section intro active" data-anchor="intro">
+    <section class="section starting active shown" data-anchor="intro">
       <div class="inner-section">
         <div class="container">
-          <div class="content-holder">
-            <h1>Let’s <span>evolv3</span> <br>the World</h1>
-            <p class="text-lg">Building the <span class="text-secondary">Life3</span> brands & technology of tomorrow, today.</p>
-            <a class="learn-more-lnk" href="#">Learn More 🧠</a>
-          </div>
-          <div class="image-holder">
-            <img src="./images/temp.jpg" alt="Temp">
-          </div>
+          <canvas height="400" width="400"></canvas>
+          <div class="text-block">
+            <div class="text-box">
+              <div class="text-area">
+                <h1>Let’s <span class="color"><strong>e</strong>volv3</span> the world, together.</h1>
+                <img src="./images/logo-full.png" alt="evolv3">
+                <p><span class="color">Life3</span> Social Ventures + R&D</p>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -111,7 +111,7 @@
             <div class="slider-holder">
               <div class="single-slide">
                 <div class="slide-inner">
-                  <div class="image-holder"></div>
+                  <div class="image-holder"><img src="./images/temp.jpg" alt="temp"></div>
                   <div class="details">
                     <div class="user">
                       <div class="avatar-holder"></div>
@@ -125,7 +125,7 @@
               </div>
               <div class="single-slide">
                 <div class="slide-inner">
-                  <div class="image-holder"></div>
+                  <div class="image-holder"><img src="./images/temp.jpg" alt="temp"></div>
                   <div class="details">
                     <div class="user">
                       <div class="avatar-holder"></div>
@@ -139,7 +139,7 @@
               </div>
               <div class="single-slide">
                 <div class="slide-inner">
-                  <div class="image-holder"></div>
+                  <div class="image-holder"><img src="./images/temp.jpg" alt="temp"></div>
                   <div class="details">
                     <div class="user">
                       <div class="avatar-holder"></div>
@@ -153,7 +153,7 @@
               </div>
               <div class="single-slide">
                 <div class="slide-inner">
-                  <div class="image-holder"></div>
+                  <div class="image-holder"><img src="./images/temp.jpg" alt="temp"></div>
                   <div class="details">
                     <div class="user">
                       <div class="avatar-holder"></div>
@@ -167,7 +167,7 @@
               </div>
               <div class="single-slide">
                 <div class="slide-inner">
-                  <div class="image-holder"></div>
+                  <div class="image-holder"><img src="./images/temp.jpg" alt="temp"></div>
                   <div class="details">
                     <div class="user">
                       <div class="avatar-holder"></div>
@@ -177,62 +177,6 @@
                     <div class="price">Price<span>.32</span></div>
                   </div>
                   <p>AIIO network is a distributed FOG computation mining protocol powered & owned by everyone.</p>
-                </div>
-              </div>
-              <div class="single-slide">
-                <div class="slide-inner">
-                  <div class="image-holder"></div>
-                  <div class="details">
-                    <div class="user">
-                      <div class="avatar-holder"></div>
-                      <p class="name">$NOMAD</p>
-                      <a href="#" class="site">nomatique.com</a>
-                    </div>
-                    <div class="price">Price<span>.32</span></div>
-                  </div>
-                  <p>A next gen Web3 global citizen platform carefully Designed for this new emerging class of society.</p>
-                </div>
-              </div>
-              <div class="single-slide">
-                <div class="slide-inner">
-                  <div class="image-holder"></div>
-                  <div class="details">
-                    <div class="user">
-                      <div class="avatar-holder"></div>
-                      <p class="name">$EV3</p>
-                      <a href="#" class="site">evolv3.io</a>
-                    </div>
-                    <div class="price">Price<span>.32</span></div>
-                  </div>
-                  <p>Core blockchain protocol of the evolv3 DAO network, A new way to approach Ventures powered by DeFi.</p>
-                </div>
-              </div>
-              <div class="single-slide">
-                <div class="slide-inner">
-                  <div class="image-holder"></div>
-                  <div class="details">
-                    <div class="user">
-                      <div class="avatar-holder"></div>
-                      <p class="name">$AIIO</p>
-                      <a href="#" class="site">aiio.network</a>
-                    </div>
-                    <div class="price">Price<span>.32</span></div>
-                  </div>
-                  <p>AIIO network is a distributed FOG computation mining protocol powered & owned by everyone.</p>
-                </div>
-              </div>
-              <div class="single-slide">
-                <div class="slide-inner">
-                  <div class="image-holder"></div>
-                  <div class="details">
-                    <div class="user">
-                      <div class="avatar-holder"></div>
-                      <p class="name">$NOMAD</p>
-                      <a href="#" class="site">nomatique.com</a>
-                    </div>
-                    <div class="price">Price<span>.32</span></div>
-                  </div>
-                  <p>A next gen Web3 global citizen platform carefully Designed for this new emerging class of society.</p>
                 </div>
               </div>
             </div>
@@ -250,7 +194,7 @@
             <a class="learn-more-lnk" href="#">Watch Video 🎥</a>
           </div>
           <div class="image-holder">
-            <img src="./images/temp.jpg" alt="Temp">
+            <img src="./images/placeholder.png" alt="Placeholder">
           </div>
         </div>
       </div>
@@ -264,7 +208,7 @@
             <a class="learn-more-lnk" href="#">Join The DAO 🤝</a>
           </div>
           <div class="image-holder">
-            <img src="./images/temp.jpg" alt="Temp">
+            <img src="./images/placeholder.png" alt="Placeholder">
           </div>
         </div>
       </div>
@@ -278,7 +222,7 @@
             <a class="learn-more-lnk" href="#">Start Seeding 🧬</a>
           </div>
           <div class="image-holder">
-            <img src="./images/temp.jpg" alt="Temp">
+            <img src="./images/placeholder.png" alt="Placeholder">
           </div>
         </div>
       </div>
@@ -292,7 +236,7 @@
             <a class="learn-more-lnk" href="#">Start Seeding 🧬</a>
           </div>
           <div class="image-holder">
-            <img src="./images/temp.jpg" alt="Temp">
+            <img src="./images/placeholder.png" alt="Placeholder">
           </div>
         </div>
       </div>

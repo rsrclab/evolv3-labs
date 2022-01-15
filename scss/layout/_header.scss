@@ -6,21 +6,27 @@
 .header {
   position: fixed;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 1.5rem;
+  padding-left: 3.0rem;
+  padding-right: 3.0rem;
   z-index: 10;
   align-items: center;
+  @include mq("desktop-ultra", max) {
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
+    flex-wrap: wrap;
+  }
   @include mq("tablet-small", max) {
     padding-top: 0.5rem;
   }
   &-logo {
     display: flex;
-    margin-left: 3rem;
     z-index: 5;
-    margin-left: 2.0rem;
+    margin-right: 2.0rem;
     align-items: flex-end;
     @include mq("tablet-small", max) {
       display: block;
@@ -29,26 +35,9 @@
       margin-right: 2.0rem;
       font-size: 0;
       img {
-        width: 15rem;
-        @include mq("desktop-ultra", max) {
-          width: 10rem;
-        }
         @include mq("tablet-small", max) {
-          width: 8.0rem;
+          width: 4.0rem;
         }
-      }
-    }
-    &__text {
-      font-family: 'Texgyreadventor';
-      font-size: 2.2rem;
-      @include mq("desktop-ultra", max) {
-        margin-top: 0;
-      }
-      @include mq("tablet-small", max) {
-        font-size: 1.1rem;
-      }
-      span {
-        color: $secondary;
       }
     }
   }
@@ -166,13 +155,14 @@
   }
   &-nav {
     display: none;
-    width: 100%;
-    margin-top: 3.0rem;
-    @include mq("desktop-ultra", max) {
-      margin-top: 2.0rem;
+    margin-top: 2.0rem;
+    width: calc(100% - 32rem);
+    @include mq("desktop", max) {
+      margin-top: 1.0rem;
     }
-    @include mq("tablet-small", max) {
-      margin-top: 1.5rem;
+    @include mq("desktop-small", max) {
+      width: 100%;
+      order: 1;
     }
     .container {
       @include mq("tablet-small", max) {
@@ -189,16 +179,22 @@
       }
       &:not(:last-child) {
         margin-right: 3.0rem;
-        @include mq("desktop-small", max) {
+        @include mq("desktop", max) {
           margin-right: 2.0rem;
         }
         @include mq("tablet-small", max) {
           margin: 0 1.0rem;
         }
+        @include mq("phone-small", max) {
+          margin: 0 0.8rem;
+        }
       }
       &:last-child {
         @include mq("tablet-small", max) {
           margin: 0 1.0rem;
+        }
+        @include mq("phone-small", max) {
+          margin: 0 0.8rem;
         }
       }
       a {
@@ -209,10 +205,10 @@
         @include mq("desktop-ultra", max) {
           font-size: 2.0rem;
         }
-        @include mq("desktop-small", max) {
+        @include mq("desktop", max) {
           font-size: 1.8rem;
         }
-        @media (max-width: 360px) {
+        @media (max-width: 374px) {
           font-size: 1.4rem;
         }        
       }
@@ -233,10 +229,6 @@
   }
   .hamburger {
     margin-top: 0;
-    margin-right: 3rem;
     z-index: 5;
-    @include mq("desktop-ultra", max) {
-      margin-right: 2.0rem;
-    }
   }
 }
