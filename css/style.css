@@ -701,111 +701,113 @@ p {
     transition: all 0.3s ease-in-out; }
     .section.slider .content-holder .slider-holder.shown {
       opacity: 1; }
-    .section.slider .content-holder .slider-holder .single-slide .slide-inner {
-      width: 40rem;
-      margin: auto;
-      border: 1px solid #707070; }
-      @media only screen and (max-width: 640px) {
-        .section.slider .content-holder .slider-holder .single-slide .slide-inner {
-          width: 34rem; } }
-      @media only screen and (max-width: 375px) {
-        .section.slider .content-holder .slider-holder .single-slide .slide-inner {
-          width: 30rem; } }
-      .section.slider .content-holder .slider-holder .single-slide .slide-inner .image-holder {
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.08);
-        padding-top: 100%;
-        font-size: 0; }
-        .section.slider .content-holder .slider-holder .single-slide .slide-inner .image-holder img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .section.slider .content-holder .slider-holder .single-slide .slide-inner .details {
-        margin: 1.8rem 0 1.5rem;
-        padding: 0 2.0rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
-        @media only screen and (max-width: 1200px) {
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details {
-            margin: 1.2rem 0;
-            padding: 0 1.0rem; } }
-        .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user {
-          display: flex;
-          align-items: center; }
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .avatar-holder {
-            width: 2.6rem;
-            height: 2.6rem;
-            margin-right: .8rem;
-            font-size: 0;
-            background-color: #fff;
-            border: 1px solid #707070; }
-            @media only screen and (max-width: 1200px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .avatar-holder {
-                width: 1.8rem;
-                height: 1.8rem;
-                margin-right: 0.5rem; } }
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
-            margin-right: 1.0rem;
-            font-size: 2.0rem;
-            color: #fff; }
-            @media only screen and (max-width: 1200px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
-                font-size: 1.6rem;
-                margin-right: 0.5rem; } }
-            @media only screen and (max-width: 640px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
-                font-size: 1.3rem; } }
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
-            display: block;
-            font-size: 1.4rem;
-            font-family: 'Rajdhani';
-            color: #05C5FF; }
-            @media only screen and (max-width: 1200px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
-                font-size: 1.2rem; } }
-            @media only screen and (max-width: 640px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
-                font-size: 0.9rem; } }
-        .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
+    .section.slider .content-holder .slider-holder .single-slide {
+      position: relative; }
+      .section.slider .content-holder .slider-holder .single-slide .slide-inner {
+        width: 40rem;
+        margin: auto;
+        border: 1px solid #707070; }
+        @media only screen and (max-width: 640px) {
+          .section.slider .content-holder .slider-holder .single-slide .slide-inner {
+            width: 34rem; } }
+        @media only screen and (max-width: 375px) {
+          .section.slider .content-holder .slider-holder .single-slide .slide-inner {
+            width: 30rem; } }
+        .section.slider .content-holder .slider-holder .single-slide .slide-inner .image-holder {
+          position: relative;
+          background-color: rgba(255, 255, 255, 0.08);
+          padding-top: 100%;
+          font-size: 0; }
+          .section.slider .content-holder .slider-holder .single-slide .slide-inner .image-holder img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .section.slider .content-holder .slider-holder .single-slide .slide-inner .details {
+          margin: 1.8rem 0 1.5rem;
+          padding: 0 2.0rem;
           display: flex;
           align-items: center;
-          font-family: 'Rajdhani';
-          font-size: 1.4rem;
-          font-weight: 700;
-          color: #404040; }
+          justify-content: space-between; }
           @media only screen and (max-width: 1200px) {
-            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
-              font-size: 1.2rem; } }
-          @media only screen and (max-width: 640px) {
-            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
-              font-size: 1.1rem; } }
-          @media only screen and (max-width: 640px) {
-            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
-              font-size: 0.9rem; } }
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
-            color: #20F088;
-            font-size: 2.0rem;
-            font-weight: 400;
-            margin-left: .6rem; }
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details {
+              margin: 1.2rem 0;
+              padding: 0 1.0rem; } }
+          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user {
+            display: flex;
+            align-items: center; }
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .avatar-holder {
+              width: 2.6rem;
+              height: 2.6rem;
+              margin-right: .8rem;
+              font-size: 0;
+              background-color: #fff;
+              border: 1px solid #707070; }
+              @media only screen and (max-width: 1200px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .avatar-holder {
+                  width: 1.8rem;
+                  height: 1.8rem;
+                  margin-right: 0.5rem; } }
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
+              margin-right: 1.0rem;
+              font-size: 2.0rem;
+              color: #fff; }
+              @media only screen and (max-width: 1200px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
+                  font-size: 1.6rem;
+                  margin-right: 0.5rem; } }
+              @media only screen and (max-width: 640px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .name {
+                  font-size: 1.3rem; } }
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
+              display: block;
+              font-size: 1.4rem;
+              font-family: 'Rajdhani';
+              color: #05C5FF; }
+              @media only screen and (max-width: 1200px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
+                  font-size: 1.2rem; } }
+              @media only screen and (max-width: 640px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .user .site {
+                  font-size: 0.9rem; } }
+          .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
+            display: flex;
+            align-items: center;
+            font-family: 'Rajdhani';
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #404040; }
             @media only screen and (max-width: 1200px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
-                font-size: 1.6rem; } }
+              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
+                font-size: 1.2rem; } }
             @media only screen and (max-width: 640px) {
-              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
-                font-size: 1.3rem;
-                margin-left: 0.5rem; } }
-      .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
-        padding: 0 2.0rem 2.0rem; }
-        @media only screen and (max-width: 1200px) {
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
-            padding: 0 1rem 1rem; } }
-        @media only screen and (max-width: 640px) {
-          .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
-            font-size: 1.1rem; } }
+              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
+                font-size: 1.1rem; } }
+            @media only screen and (max-width: 640px) {
+              .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price {
+                font-size: 0.9rem; } }
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
+              color: #20F088;
+              font-size: 2.0rem;
+              font-weight: 400;
+              margin-left: .6rem; }
+              @media only screen and (max-width: 1200px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
+                  font-size: 1.6rem; } }
+              @media only screen and (max-width: 640px) {
+                .section.slider .content-holder .slider-holder .single-slide .slide-inner .details .price span {
+                  font-size: 1.3rem;
+                  margin-left: 0.5rem; } }
+        .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
+          padding: 0 2.0rem 2.0rem; }
+          @media only screen and (max-width: 1200px) {
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
+              padding: 0 1rem 1rem; } }
+          @media only screen and (max-width: 640px) {
+            .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
+              font-size: 1.1rem; } }
     .section.slider .content-holder .slider-holder .slick-prev {
       width: 54px;
       height: 134px;
