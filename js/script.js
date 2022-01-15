@@ -20,15 +20,6 @@
       normalScrollElements: '.slider-holder, .cards-holder',
       onLeave: function(origin, destination, direction){
         var leavingSection = this;
-        $('.section.intro .image-holder img.active').removeClass('active');
-        // Handling Menu and Logo positions
-        if(origin.index == 0 && direction =='down'){
-          $('.header-nav').fadeIn();
-        }
-        else if(origin.index == 1 && direction == 'up'){
-          $('.header-nav').fadeOut();
-        }
-        
         // Handling background
         if(destination.anchor) {
           $('.page-bg .section-bg[bg-anchor=' + destination.anchor + ']').addClass('active');
@@ -41,7 +32,9 @@
         $('.section[data-anchor=' + destination.anchor + '] .image-holder img').addClass('active');
       },
     });
-    
+
+    // fullpage_api.setAllowScrolling(false);
+
     $('.section.slider .slider-holder').slick({
       slidesToScroll: 1,
       infinite: false,
@@ -59,5 +52,12 @@
         $(this).slick('slickPrev');
       }
     }));
+
+    
+    $('.section.slider .slider-holder').on('edge', (function(slick, direction) {
+      console.log(slick);
+      console.log(direction);
+    }));
+    
   });
 })(jQuery);
