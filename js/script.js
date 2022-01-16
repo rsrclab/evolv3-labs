@@ -29,6 +29,7 @@
     var myFullPage = $('#fullpage').fullpage({
       anchors: ['intro', 'portfolio', 'life', 'mission', 'sev', 'fund', 'team'],
       menu: '#menu',
+      normalScrollElements: '.cards-holder',
       scrollingSpeed: 1000,
       onLeave: function (origin, destination, direction) {
         var leavingSection = this;

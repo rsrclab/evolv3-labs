@@ -138,31 +138,24 @@
           max-width: 100%;
           margin-bottom: 2rem;
         }
+        @include mq("tablet-small", max) {
+          max-height: calc(100vh - 45rem);
+        }
       }
     }
   }
   &.slider {
     .container {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       width: 100%;
       height: 100%;
-      @include mq("tablet-small", max) {
-        display: block;
-        align-items: initial;
-        height: auto;
-      }
     }
     .content-holder {
       width: 100%;
-      @include mq("desktop", max) {
-        padding-top: 18.0rem;
-      }
-      @include mq("desktop-small", max) {
-        padding-top: 0;
-      }
+      padding-bottom: 7.5rem;
       @include mq("tablet-small", max) {
-        padding-top: 15rem;
+        padding-top: 6.5rem;
       }
       .slider-holder {
         margin-bottom: 0;
@@ -174,9 +167,13 @@
         .single-slide {
           position: relative;
           .slide-inner {
-            width: 40rem;
+            width: 46rem;
             margin: auto;
             border: 1px solid #707070;
+            border-radius: 5px;
+            @include mq("desktop", max) {
+              width: 40rem;
+            }
             @include mq("tablet-small", max) {
               width: 34rem;
             }
@@ -294,6 +291,7 @@
           width: 54px;
           height: 134px;
           left: -60px;
+          top: -20vh;
           background-position: center;
           background-image: url(../images/button-left.svg);
           background-size: contain;
@@ -311,6 +309,7 @@
           width: 54px;
           height: 134px;
           right: -60px;
+          top: -20vh;
           background-position: center;
           background-image: url(../images/button-right.svg);
           background-size: contain;
@@ -387,7 +386,7 @@
         padding-top: 20rem;
       }
       @include mq("desktop", max) {
-        padding-top: 13.5rem;
+        padding-top: 14rem;
       }
       h2 {
         display: inline-block;
@@ -426,15 +425,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 8.0rem 0 0;
-        @include mq("tablet-small", max) {
-          max-height: calc(100vh - 330px);
-          overflow: scroll;
-        }
         @include mq("desktop-ultra", max) {
           margin-top: 5.0rem;
         }
         @include mq("tablet-small", max) {
           margin-top: 2.0rem;
+          max-height: calc(100vh - 370px);
+          overflow: scroll;
         }
         .card {
           display: flex;
@@ -519,10 +516,30 @@
     }
   }
   &.starting {
+    .container {
+      z-index: 1;
+    }
     .inner-section {
       display: flex;
       align-items: center;
       justify-content: center;
+      &::before {
+        content: '+';
+        position: absolute;
+        bottom: 2.0rem;
+        left: calc(50% - 8px);
+        font-size: 3.0rem;
+        color: #37F8D9;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 6.0rem;
+        left: 50%;
+        width: 1px;
+        height: calc(50% - 6.0rem);
+        background-image: linear-gradient(rgba(0,0,0,0), #37F8D9)
+      }
     }
     canvas {
       position: absolute;
