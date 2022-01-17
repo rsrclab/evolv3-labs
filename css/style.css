@@ -277,9 +277,6 @@ p {
       transition: all 0.3s ease-in-out; }
       @media only screen and (max-width: 1599px) {
         .header-nav__item a {
-          font-size: 2.0rem; } }
-      @media only screen and (max-width: 1200px) {
-        .header-nav__item a {
           font-size: 1.8rem; } }
       @media (max-width: 374px) {
         .header-nav__item a {
@@ -316,7 +313,7 @@ p {
       .footer-copyright {
         margin-left: 2.0rem;
         margin-bottom: 1.6rem;
-        font-size: 1.6rem; } }
+        font-size: 1.5rem; } }
   .footer-menu {
     margin-left: auto;
     margin-right: 5.7rem;
