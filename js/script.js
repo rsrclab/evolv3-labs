@@ -58,6 +58,7 @@
           $('.page-bg .section-bg:not([bg-anchor=' + destination.anchor + '])').removeClass('active');
         }
         $('.section[data-anchor=' + origin.anchor + '] .inner-section').fadeOut(500, 'swing');
+        $('.section.slider .slider-holder').removeClass('shown');
 
         setTimeout((target) => {
           $('.section[data-anchor=' + target + '] .inner-section').fadeIn(500, 'swing');
