@@ -218,10 +218,10 @@
             }
             @include mq("tablet-small", max) {
               width: 34rem;
-              max-width: 100%;
             }
             @include mq("phone-small", max) {
-              width: 30rem;
+              width: 28em;
+              max-width: 100%;
             }
             .image-holder {
               position: relative;
