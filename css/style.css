@@ -596,9 +596,9 @@ p {
 .section.intro .content-holder {
   margin: 15.0rem 0;
   max-width: 60.0rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1599px) {
     .section.intro .content-holder {
-      max-width: 50.0rem; } }
+      max-width: 45.0rem; } }
   @media only screen and (max-width: 992px) {
     .section.intro .content-holder {
       max-width: initial;
@@ -655,25 +655,24 @@ p {
   max-width: calc(100% - 65.0rem); }
   @media only screen and (max-width: 1599px) {
     .section.intro .image-holder {
-      width: 40.0rem; } }
-  @media only screen and (max-width: 1200px) {
-    .section.intro .image-holder {
-      max-width: calc(100% - 55.0rem); } }
+      max-width: calc(100% - 50.0rem); } }
   @media only screen and (max-width: 992px) {
     .section.intro .image-holder {
-      width: 100%;
-      max-width: initial;
       text-align: center;
       margin-left: -2.4rem;
       width: calc(100% + 4.8rem);
       margin-right: -2.4rem;
-      padding-top: 13rem; } }
+      padding-top: 13rem;
+      max-width: initial; } }
   .section.intro .image-holder img {
     max-height: calc(100vh - 25.0rem); }
     @media only screen and (max-width: 992px) {
       .section.intro .image-holder img {
-        max-width: 100%;
-        margin-bottom: 2rem; } }
+        max-width: 60rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto; } }
 .section.slider .slide-bgs {
   position: absolute;
   top: 0;
@@ -915,11 +914,19 @@ p {
         font-size: 1.4rem; } }
     .section.slider .content-holder .slider-footer a {
       color: #05C5FF; }
+.section.cards .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  @media only screen and (max-width: 1200px) {
+    .section.cards .container {
+      display: block;
+      width: initial;
+      height: initial; } }
 .section.cards .content-holder {
-  padding-top: 32.0rem; }
-  @media only screen and (max-width: 1599px) {
-    .section.cards .content-holder {
-      padding-top: 20rem; } }
+  width: 100%;
+  padding-top: 0; }
   @media only screen and (max-width: 1200px) {
     .section.cards .content-holder {
       padding-top: 12rem; } }
@@ -1112,7 +1119,9 @@ p {
       @media only screen and (max-width: 640px) {
         .section.starting .text-block .text-area h1 {
           font-size: 5.2rem;
-          margin: 0 0 2.0rem; } }
+          margin: 0 0 2.0rem; }
+          .section.starting .text-block .text-area h1 br {
+            display: none; } }
     .section.starting .text-block .text-area .color {
       color: #2DF8D9; }
     .section.starting .text-block .text-area p {
