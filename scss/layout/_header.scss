@@ -4,6 +4,7 @@
 
 // Header styles
 .header {
+  opacity: 0;
   position: fixed;
   display: flex;
   align-items: center;
@@ -15,6 +16,10 @@
   padding-right: 3.0rem;
   z-index: 10;
   align-items: center;
+  &.shown {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
   @include mq("desktop-ultra", max) {
     padding-left: 2.0rem;
     padding-right: 2.0rem;
@@ -58,38 +63,31 @@
       color: $green;
     }
   }
+  &-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
   &-menu {
     position: fixed;
     top: 0;
     right: -47.0rem;
     width: 47.0rem;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
     border-left: 1px solid #707070;
     transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
     z-index: 1;
     @include mq("tablet-small", max) {
       width: 100vw;
       right: -100vw;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 47.0rem;
-      width: 0;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      transition: all 0.3s ease-in-out;
-      @include mq("tablet-small", max) {
-        display: none;
-      }
-    }
     &.open {
       right: 0;
-      &::before {
-        width: calc(100vw - 47.0rem);
-      }
     }
     &__holder {
       position: relative;

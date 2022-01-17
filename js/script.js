@@ -9,10 +9,17 @@
     $('.hamburger').on('click', function () {
       $(this).toggleClass('open');
       $('.header-menu').toggleClass('open');
+      $('.header-overlay').fadeToggle();
     });
 
     $('.footer-menu__trigger').on('click', function () {
       $('.footer-menu').toggleClass('open');
+    });
+
+    $('.section.slider .slider-holder').on('init', function(slick){
+      setTimeout(() => {
+        $('.slide-bg[slide-anchor="0"]').addClass('shown');
+      }, 1000);
     });
 
     $('.section.slider .slider-holder').slick({
@@ -25,11 +32,14 @@
       fade: true,
       pauseOnHover: false,
     });
+    $('.section.slider .slider-holder').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      $('.slide-bg').removeClass('shown');
+      $('.slide-bg[slide-anchor=' + nextSlide + ']').addClass('shown');
+    });
 
     var myFullPage = $('#fullpage').fullpage({
       anchors: ['intro', 'portfolio', 'life', 'mission', 'sev', 'fund', 'team'],
       menu: '#menu',
-      normalScrollElements: '.cards-holder',
       scrollingSpeed: 1000,
       onLeave: function (origin, destination, direction) {
         var leavingSection = this;
@@ -48,16 +58,35 @@
           $('.page-bg .section-bg:not([bg-anchor=' + destination.anchor + '])').removeClass('active');
         }
         $('.section[data-anchor=' + origin.anchor + '] .inner-section').fadeOut(500, 'swing');
+
         setTimeout((target) => {
           $('.section[data-anchor=' + target + '] .inner-section').fadeIn(500, 'swing');
         }, 500, destination.anchor);
-        $('.section.slider .slider-holder').removeClass('shown');
+        
+        if ( $('.section[data-anchor=' + destination.anchor + '] .slide-bgs').length ) {
+          $('.section[data-anchor=' + destination.anchor + '] .slide-bgs').addClass('shown');
+        } else {
+          $('.slide-bgs').removeClass('shown');
+        }
       },
       afterLoad: function (origin, destination, direction) {
         $('.section.slider .slider-holder').slick('setPosition');
         $('.section.slider .slider-holder').addClass('shown');
       },
     });
+    fullpage_api.silentMoveTo(1);
+    fullpage_api.setAllowScrolling(false);
+
+    // Loading
+    setTimeout(() => {
+      $('.section.starting .text-block.animating').removeClass('animating');
+      $('.header').addClass('shown');
+      $('.footer').addClass('shown');
+    }, 2500);
+    setTimeout(() => {
+      $('.section.starting .inner-section').addClass('loaded');
+      fullpage_api.setAllowScrolling(true);
+    }, 3000);
 
   });
 })(jQuery);

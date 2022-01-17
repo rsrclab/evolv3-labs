@@ -145,6 +145,47 @@
     }
   }
   &.slider {
+    .slide-bgs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.7s ease-in-out;
+      &.shown {
+        opacity: 1;
+      }
+      .slide-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        &.shown {
+          opacity: 1;
+        }
+        .bg-holder {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          @include backgroundElement;
+          &.bg-for-sm {
+            display: none;
+          }
+          @include mq("tablet-small", max) {
+            display: none;
+            &.bg-for-sm {
+              display: block;
+            }
+          }
+        }
+      }
+    }
     .container {
       display: flex;
       align-items: flex-end;
@@ -152,6 +193,7 @@
       height: 100%;
     }
     .content-holder {
+      position: relative;
       width: 100%;
       padding-bottom: 7.5rem;
       @include mq("tablet-small", max) {
@@ -176,6 +218,7 @@
             }
             @include mq("tablet-small", max) {
               width: 34rem;
+              max-width: 100%;
             }
             @include mq("phone-small", max) {
               width: 30rem;
@@ -386,7 +429,7 @@
         padding-top: 20rem;
       }
       @include mq("desktop", max) {
-        padding-top: 14rem;
+        padding-top: 12rem;
       }
       h2 {
         display: inline-block;
@@ -450,7 +493,8 @@
           }
           @include mq("tablet-small", max) {
             width: 100%;
-            margin: 0 0 2.0rem;
+            margin: 0 0 1.2rem;
+            padding: 1rem 2rem;
           }
           .details {
             max-width: calc(100% - 10.0rem);
@@ -530,6 +574,8 @@
         left: calc(50% - 8px);
         font-size: 3.0rem;
         color: #37F8D9;
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
       }
       &::after {
         content: '';
@@ -538,7 +584,17 @@
         left: 50%;
         width: 1px;
         height: calc(50% - 6.0rem);
-        background-image: linear-gradient(rgba(0,0,0,0), #37F8D9)
+        background-image: linear-gradient(rgba(0,0,0,0), #37F8D9);
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+      }
+      &.loaded {
+        &::before {
+          opacity: 1;
+        }
+        &::after {
+          opacity: 1;
+        }
       }
     }
     canvas {
@@ -549,7 +605,7 @@
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       height: 100%;
-      opacity: 0.36;
+      opacity: 0.4;
       overflow: hidden;
     }
 
@@ -584,37 +640,61 @@
         max-width: 1160px;
         margin: 0 auto;
         padding: 0 15px;
+        h1 {
+          font-size: 12rem;
+          line-height: 1;
+          font-weight: 400;
+          margin: 0 0 3rem;
+          // transition: all 0.7s ease-in-out;
+          @include mq("desktop-ultra", max) {
+            font-size: 9rem;
+          }
+          @include mq("tablet-small", max) {
+            font-size: 5.2rem;
+            margin: 0 0 2.0rem;
+          }
+        }
+        .color {
+          color: #2DF8D9;
+        }
+        p {
+          font-family: 'Texgyreadventor';
+          font-size: 2.5rem;
+          line-height: 1.2;
+          color: $white;
+          opacity: 1;
+          transition: all 0.7s ease-in-out;
+          @include mq("tablet-small", max) {
+            font-size: 1.8rem;
+          }
+        }
+        img {
+          opacity: 1;
+          transition: all 0.7s ease-in-out;
+        }
         @include mq("tablet-small", max) {
           img {
             max-width: 10rem;
           }
         }
       }
-      h1 {
-        font-size: 12rem;
-        line-height: 1;
-        font-weight: 400;
-        margin: 0 0 3rem;
-        @include mq("desktop-ultra", max) {
-          font-size: 9rem;
+      
+      &.animating {
+        h1 {
+          animation-name: loading;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
         }
-        @include mq("tablet-small", max) {
-          font-size: 5.2rem;
-          margin: 0 0 2.0rem;
-        }
-      }
-      .color {
-        color: #2DF8D9;
-      }
-      p {
-        font-family: 'Texgyreadventor';
-        font-size: 2.5rem;
-        line-height: 1.2;
-        color: $white;
-        @include mq("tablet-small", max) {
-          font-size: 1.8rem;
+        img, p {
+          opacity: 0;
         }
       }
     }
   }
+}
+@keyframes loading {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }

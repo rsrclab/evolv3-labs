@@ -109,6 +109,7 @@ p {
   src: url("../fonts/texgyreadventor-regular.otf") format("opentype");
   font-weight: 400; }
 .header {
+  opacity: 0;
   position: fixed;
   display: flex;
   align-items: center;
@@ -120,6 +121,9 @@ p {
   padding-right: 3.0rem;
   z-index: 10;
   align-items: center; }
+  .header.shown {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
   @media only screen and (max-width: 1599px) {
     .header {
       padding-left: 2.0rem;
@@ -157,36 +161,30 @@ p {
         margin-right: 1.2rem; } }
     .header-notification span {
       color: #71F749; }
+  .header-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none; }
   .header-menu {
     position: fixed;
     top: 0;
     right: -47.0rem;
     width: 47.0rem;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
     border-left: 1px solid #707070;
     transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
     z-index: 1; }
     @media only screen and (max-width: 640px) {
       .header-menu {
         width: 100vw;
         right: -100vw; } }
-    .header-menu::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 47.0rem;
-      width: 0;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      transition: all 0.3s ease-in-out; }
-      @media only screen and (max-width: 640px) {
-        .header-menu::before {
-          display: none; } }
     .header-menu.open {
       right: 0; }
-      .header-menu.open::before {
-        width: calc(100vw - 47.0rem); }
     .header-menu__holder {
       position: relative;
       padding: 15.0rem 7.0rem 3.0rem 3.0rem;
@@ -298,12 +296,16 @@ p {
     z-index: 5; }
 
 .footer {
+  opacity: 0;
   position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0;
   left: 0;
   width: 100%; }
+  .footer.shown {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
   .footer-copyright {
     margin-left: 5.7rem;
     margin-bottom: 3.2rem;
@@ -677,12 +679,49 @@ p {
     @media only screen and (max-width: 640px) {
       .section.intro .image-holder img {
         max-height: calc(100vh - 45rem); } }
+.section.slider .slide-bgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.7s ease-in-out; }
+  .section.slider .slide-bgs.shown {
+    opacity: 1; }
+  .section.slider .slide-bgs .slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+    .section.slider .slide-bgs .slide-bg.shown {
+      opacity: 1; }
+    .section.slider .slide-bgs .slide-bg .bg-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .section.slider .slide-bgs .slide-bg .bg-holder.bg-for-sm {
+        display: none; }
+      @media only screen and (max-width: 640px) {
+        .section.slider .slide-bgs .slide-bg .bg-holder {
+          display: none; }
+          .section.slider .slide-bgs .slide-bg .bg-holder.bg-for-sm {
+            display: block; } }
 .section.slider .container {
   display: flex;
   align-items: flex-end;
   width: 100%;
   height: 100%; }
 .section.slider .content-holder {
+  position: relative;
   width: 100%;
   padding-bottom: 7.5rem; }
   @media only screen and (max-width: 640px) {
@@ -706,7 +745,8 @@ p {
             width: 40rem; } }
         @media only screen and (max-width: 640px) {
           .section.slider .content-holder .slider-holder .single-slide .slide-inner {
-            width: 34rem; } }
+            width: 34rem;
+            max-width: 100%; } }
         @media only screen and (max-width: 375px) {
           .section.slider .content-holder .slider-holder .single-slide .slide-inner {
             width: 30rem; } }
@@ -887,7 +927,7 @@ p {
       padding-top: 20rem; } }
   @media only screen and (max-width: 1200px) {
     .section.cards .content-holder {
-      padding-top: 14rem; } }
+      padding-top: 12rem; } }
   .section.cards .content-holder h2 {
     display: inline-block;
     background: radial-gradient(#fff 0%, #A0A0A0 50%);
@@ -945,7 +985,8 @@ p {
       @media only screen and (max-width: 640px) {
         .section.cards .content-holder .cards-holder .card {
           width: 100%;
-          margin: 0 0 2.0rem; } }
+          margin: 0 0 1.2rem;
+          padding: 1rem 2rem; } }
       .section.cards .content-holder .cards-holder .card .details {
         max-width: calc(100% - 10.0rem); }
         @media only screen and (max-width: 1599px) {
@@ -1012,7 +1053,9 @@ p {
     bottom: 2.0rem;
     left: calc(50% - 8px);
     font-size: 3.0rem;
-    color: #37F8D9; }
+    color: #37F8D9;
+    opacity: 0;
+    transition: all 0.7s ease-in-out; }
   .section.starting .inner-section::after {
     content: '';
     position: absolute;
@@ -1020,7 +1063,13 @@ p {
     left: 50%;
     width: 1px;
     height: calc(50% - 6.0rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), #37F8D9); }
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #37F8D9);
+    opacity: 0;
+    transition: all 0.7s ease-in-out; }
+  .section.starting .inner-section.loaded::before {
+    opacity: 1; }
+  .section.starting .inner-section.loaded::after {
+    opacity: 1; }
 .section.starting canvas {
   position: absolute;
   top: 50%;
@@ -1029,7 +1078,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 100%;
-  opacity: 0.36;
+  opacity: 0.4;
   overflow: hidden; }
 .section.starting .text-block {
   display: -webkit-box;
@@ -1060,30 +1109,49 @@ p {
     max-width: 1160px;
     margin: 0 auto;
     padding: 0 15px; }
+    .section.starting .text-block .text-area h1 {
+      font-size: 12rem;
+      line-height: 1;
+      font-weight: 400;
+      margin: 0 0 3rem; }
+      @media only screen and (max-width: 1599px) {
+        .section.starting .text-block .text-area h1 {
+          font-size: 9rem; } }
+      @media only screen and (max-width: 640px) {
+        .section.starting .text-block .text-area h1 {
+          font-size: 5.2rem;
+          margin: 0 0 2.0rem; } }
+    .section.starting .text-block .text-area .color {
+      color: #2DF8D9; }
+    .section.starting .text-block .text-area p {
+      font-family: 'Texgyreadventor';
+      font-size: 2.5rem;
+      line-height: 1.2;
+      color: #fff;
+      opacity: 1;
+      transition: all 0.7s ease-in-out; }
+      @media only screen and (max-width: 640px) {
+        .section.starting .text-block .text-area p {
+          font-size: 1.8rem; } }
+    .section.starting .text-block .text-area img {
+      opacity: 1;
+      transition: all 0.7s ease-in-out; }
     @media only screen and (max-width: 640px) {
       .section.starting .text-block .text-area img {
         max-width: 10rem; } }
-  .section.starting .text-block h1 {
-    font-size: 12rem;
-    line-height: 1;
-    font-weight: 400;
-    margin: 0 0 3rem; }
-    @media only screen and (max-width: 1599px) {
-      .section.starting .text-block h1 {
-        font-size: 9rem; } }
-    @media only screen and (max-width: 640px) {
-      .section.starting .text-block h1 {
-        font-size: 5.2rem;
-        margin: 0 0 2.0rem; } }
-  .section.starting .text-block .color {
-    color: #2DF8D9; }
-  .section.starting .text-block p {
-    font-family: 'Texgyreadventor';
-    font-size: 2.5rem;
-    line-height: 1.2;
-    color: #fff; }
-    @media only screen and (max-width: 640px) {
-      .section.starting .text-block p {
-        font-size: 1.8rem; } }
+  .section.starting .text-block.animating h1 {
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+  .section.starting .text-block.animating img, .section.starting .text-block.animating p {
+    opacity: 0; }
+
+@keyframes loading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
