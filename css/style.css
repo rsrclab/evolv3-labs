@@ -985,8 +985,8 @@ p {
       @media only screen and (max-width: 640px) {
         .section.cards .content-holder .cards-holder .card {
           width: 100%;
-          margin: 0 0 1.2rem;
-          padding: 1rem 2rem; } }
+          margin: 0 0 2rem;
+          padding: 2rem; } }
       .section.cards .content-holder .cards-holder .card .details {
         max-width: calc(100% - 10.0rem); }
         @media only screen and (max-width: 1599px) {

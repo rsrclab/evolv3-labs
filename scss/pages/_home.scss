@@ -493,8 +493,8 @@
           }
           @include mq("tablet-small", max) {
             width: 100%;
-            margin: 0 0 1.2rem;
-            padding: 1rem 2rem;
+            margin: 0 0 2rem;
+            padding: 2rem;
           }
           .details {
             max-width: calc(100% - 10.0rem);
