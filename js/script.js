@@ -74,6 +74,7 @@
         $('.section.slider .slider-holder').addClass('shown');
       },
     });
+
     fullpage_api.silentMoveTo(1);
     fullpage_api.setAllowScrolling(false);
 
@@ -89,6 +90,7 @@
     }, 3000);
 
   });
+  console.log(1);
 })(jQuery);
 
 var canvas, ctx, max, p, count;
@@ -110,6 +112,7 @@ window.onload = function () {
   for (a = 0; a < max; a++)p.push([0, p[a][0], p[a][1]]);
   for (a = 0; a < max; a++)p.push([p[a][1], 0, p[a][0]]);
   rus();
+  console.log(2);
 };
 
 function rus() {

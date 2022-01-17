@@ -696,7 +696,7 @@ p {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.7s ease-in-out; }
     .section.slider .slide-bgs .slide-bg.shown {
       opacity: 1; }
     .section.slider .slide-bgs .slide-bg .bg-holder {
