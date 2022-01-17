@@ -652,7 +652,6 @@ p {
       .section.intro .content-holder .learn-more-lnk {
         font-size: 1.8rem; } }
 .section.intro .image-holder {
-  margin: 0 auto;
   max-width: calc(100% - 65.0rem); }
   @media only screen and (max-width: 1599px) {
     .section.intro .image-holder {
@@ -673,12 +672,8 @@ p {
     max-height: calc(100vh - 25.0rem); }
     @media only screen and (max-width: 992px) {
       .section.intro .image-holder img {
-        max-height: calc(100vh - 40rem);
         max-width: 100%;
         margin-bottom: 2rem; } }
-    @media only screen and (max-width: 640px) {
-      .section.intro .image-holder img {
-        max-height: calc(100vh - 45rem); } }
 .section.slider .slide-bgs {
   position: absolute;
   top: 0;

@@ -114,7 +114,6 @@
       }
     }
     .image-holder {
-      margin: 0 auto;
       max-width: calc(100% - 65.0rem);
       @include mq("desktop-ultra", max) {
         width: 40.0rem;
@@ -134,12 +133,10 @@
       img {
         max-height: calc(100vh - 25.0rem);
         @include mq("tablet-wide", max) {
-          max-height: calc(100vh - 40rem);
           max-width: 100%;
           margin-bottom: 2rem;
         }
         @include mq("tablet-small", max) {
-          max-height: calc(100vh - 45rem);
         }
       }
     }
