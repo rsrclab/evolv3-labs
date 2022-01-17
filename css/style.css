@@ -953,10 +953,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 8.0rem 0 0; }
-    @media only screen and (max-width: 1599px) {
-      .section.cards .content-holder .cards-holder {
-        margin-top: 5.0rem; } }
+    margin: 5.0rem 0 0; }
     @media only screen and (max-width: 640px) {
       .section.cards .content-holder .cards-holder {
         margin-top: 2.0rem;

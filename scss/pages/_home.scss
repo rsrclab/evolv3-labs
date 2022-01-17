@@ -464,10 +464,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 8.0rem 0 0;
-        @include mq("desktop-ultra", max) {
-          margin-top: 5.0rem;
-        }
+        margin: 5.0rem 0 0;
         @include mq("tablet-small", max) {
           margin-top: 2.0rem;
           max-height: calc(100vh - 370px);
