@@ -655,7 +655,7 @@ p {
   max-width: calc(100% - 65.0rem); }
   @media only screen and (max-width: 1599px) {
     .section.intro .image-holder {
-      max-width: calc(100% - 50.0rem); } }
+      max-width: calc(100% - 55.0rem); } }
   @media only screen and (max-width: 992px) {
     .section.intro .image-holder {
       text-align: center;
@@ -1115,7 +1115,7 @@ p {
       margin: 0 0 3rem; }
       @media only screen and (max-width: 1599px) {
         .section.starting .text-block .text-area h1 {
-          font-size: 9rem; } }
+          font-size: 9.6rem; } }
       @media only screen and (max-width: 640px) {
         .section.starting .text-block .text-area h1 {
           font-size: 5.2rem;
@@ -1131,6 +1131,9 @@ p {
       color: #fff;
       opacity: 1;
       transition: all 0.7s ease-in-out; }
+      @media only screen and (max-width: 1599px) {
+        .section.starting .text-block .text-area p {
+          font-size: 2.2rem; } }
       @media only screen and (max-width: 640px) {
         .section.starting .text-block .text-area p {
           font-size: 1.8rem; } }

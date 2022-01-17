@@ -116,7 +116,7 @@
     .image-holder {
       max-width: calc(100% - 65.0rem);
       @include mq("desktop-ultra", max) {
-        max-width: calc(100% - 50.0rem);
+        max-width: calc(100% - 55.0rem);
       }
       @include mq("tablet-wide", max) {
         text-align: center;
@@ -649,7 +649,7 @@
           margin: 0 0 3rem;
           // transition: all 0.7s ease-in-out;
           @include mq("desktop-ultra", max) {
-            font-size: 9rem;
+            font-size: 9.6rem;
           }
           @include mq("tablet-small", max) {
             font-size: 5.2rem;
@@ -669,6 +669,9 @@
           color: $white;
           opacity: 1;
           transition: all 0.7s ease-in-out;
+          @include mq("desktop-ultra", max) {
+            font-size: 2.2rem;
+          }
           @include mq("tablet-small", max) {
             font-size: 1.8rem;
           }
