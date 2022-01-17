@@ -126,8 +126,9 @@ p {
     transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
   @media only screen and (max-width: 1599px) {
     .header {
-      padding-left: 2.0rem;
-      padding-right: 2.0rem;
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+      padding-top: 1.3rem;
       flex-wrap: wrap; } }
   @media only screen and (max-width: 640px) {
     .header {
@@ -137,12 +138,18 @@ p {
     z-index: 5;
     margin-right: 2.0rem;
     align-items: flex-end; }
+    @media only screen and (max-width: 1599px) {
+      .header-logo {
+        margin-right: 1.8rem; } }
     @media only screen and (max-width: 640px) {
       .header-logo {
         display: block; } }
     .header-logo a {
       margin-right: 2.0rem;
       font-size: 0; }
+      @media only screen and (max-width: 1599px) {
+        .header-logo a img {
+          width: 5.5rem; } }
       @media only screen and (max-width: 640px) {
         .header-logo a img {
           width: 4.0rem; } }
@@ -154,6 +161,10 @@ p {
     font-family: 'Rajdhani';
     font-size: 1.7rem;
     font-weight: 700; }
+    @media only screen and (max-width: 1599px) {
+      .header-notification {
+        padding: 1rem 2.3rem;
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 640px) {
       .header-notification {
         font-size: 1.2rem;

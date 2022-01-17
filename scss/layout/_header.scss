@@ -21,8 +21,9 @@
     transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   @include mq("desktop-ultra", max) {
-    padding-left: 2.0rem;
-    padding-right: 2.0rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 1.3rem;
     flex-wrap: wrap;
   }
   @include mq("tablet-small", max) {
@@ -33,6 +34,9 @@
     z-index: 5;
     margin-right: 2.0rem;
     align-items: flex-end;
+    @include mq("desktop-ultra", max) {
+      margin-right: 1.8rem;
+    }
     @include mq("tablet-small", max) {
       display: block;
     }
@@ -40,6 +44,9 @@
       margin-right: 2.0rem;
       font-size: 0;
       img {
+        @include mq("desktop-ultra", max) {
+          width: 5.5rem;
+        }
         @include mq("tablet-small", max) {
           width: 4.0rem;
         }
@@ -54,6 +61,10 @@
     font-family: 'Rajdhani';
     font-size: 1.7rem;
     font-weight: 700;
+    @include mq("desktop-ultra", max) {
+      padding: 1rem 2.3rem;
+      font-size: 1.5rem;
+    }
     @include mq("tablet-small", max) {
       font-size: 1.2rem;
       padding: 0.7rem 1.5rem;
