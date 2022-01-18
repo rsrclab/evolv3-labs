@@ -308,6 +308,7 @@ p {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   bottom: 0;
   left: 0;
   width: 100%; }
@@ -316,7 +317,7 @@ p {
     transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
   .footer-copyright {
     margin-left: 5.7rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.0rem;
     color: #404040;
     font-family: 'Texgyreadventor';
     font-size: 2.4rem; }
@@ -326,17 +327,17 @@ p {
     @media only screen and (max-width: 1200px) {
       .footer-copyright {
         margin-left: 2.0rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.0rem;
         font-size: 1.5rem; } }
   .footer-menu {
     margin-left: auto;
     margin-right: 5.7rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.0rem;
     font-size: 1.4rem; }
     @media only screen and (max-width: 1200px) {
       .footer-menu {
         margin-right: 2.0rem;
-        margin-bottom: 1.6rem; } }
+        margin-bottom: 1.0rem; } }
     .footer-menu__trigger {
       display: block;
       position: relative; }
