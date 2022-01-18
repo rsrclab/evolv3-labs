@@ -253,7 +253,6 @@
                   margin-right: .8rem;
                   font-size: 0;
                   background-color: $white;
-                  border: 1px solid #707070;
                   @include mq("desktop", max) {
                     width: 1.8rem;
                     height: 1.8rem;
@@ -513,7 +512,6 @@
               width: 5.0rem;
               height: 5.0rem;
               background-color: white;
-              border: 1px solid #707070;
               margin: 0 0 1.0rem;
               @include mq("desktop-ultra", max) {
                 width: 3.8rem;
