@@ -316,7 +316,7 @@ p {
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
   .footer-copyright {
-    margin-left: 5.7rem;
+    margin-left: 3.0rem;
     margin-bottom: 2.0rem;
     color: #404040;
     font-family: 'Texgyreadventor';
@@ -326,17 +326,17 @@ p {
         font-size: 1.8rem; } }
     @media only screen and (max-width: 1200px) {
       .footer-copyright {
-        margin-left: 2.0rem;
+        margin-left: 1.8rem;
         margin-bottom: 1.0rem;
         font-size: 1.5rem; } }
   .footer-menu {
     margin-left: auto;
-    margin-right: 5.7rem;
+    margin-right: 3.0rem;
     margin-bottom: 2.0rem;
     font-size: 1.4rem; }
     @media only screen and (max-width: 1200px) {
       .footer-menu {
-        margin-right: 2.0rem;
+        margin-right: 1.8rem;
         margin-bottom: 1.0rem; } }
     .footer-menu__trigger {
       display: block;
@@ -729,7 +729,7 @@ p {
 .section.slider .content-holder {
   position: relative;
   width: 100%;
-  padding-bottom: 7.5rem; }
+  padding-bottom: 5.0rem; }
   @media only screen and (max-width: 640px) {
     .section.slider .content-holder {
       padding-top: 6.5rem; } }
@@ -886,12 +886,12 @@ p {
     .section.slider .content-holder .slider-holder .slick-dots {
       height: 1.4rem;
       position: relative;
-      margin: 3.0rem 0 0;
+      margin: 1.5rem 0 0;
       bottom: initial;
       align-items: center; }
       @media only screen and (max-width: 640px) {
         .section.slider .content-holder .slider-holder .slick-dots {
-          margin-top: 2.0rem; } }
+          margin-top: 1.0rem; } }
       .section.slider .content-holder .slider-holder .slick-dots li {
         width: auto;
         height: auto;
@@ -912,7 +912,7 @@ p {
           width: 1.4rem;
           height: 1.4rem; }
   .section.slider .content-holder .slider-footer {
-    margin: 2.4rem 0 0;
+    margin: 2.0rem 0 0;
     font-size: 2.4rem;
     color: #fff;
     text-align: center; }

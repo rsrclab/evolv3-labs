@@ -191,7 +191,7 @@
     .content-holder {
       position: relative;
       width: 100%;
-      padding-bottom: 7.5rem;
+      padding-bottom: 5.0rem;
       @include mq("tablet-small", max) {
         padding-top: 6.5rem;
       }
@@ -365,11 +365,11 @@
         .slick-dots {
           height: 1.4rem;
           position: relative;
-          margin: 3.0rem 0 0;
+          margin: 1.5rem 0 0;
           bottom: initial;
           align-items: center;
           @include mq("tablet-small", max) {
-            margin-top: 2.0rem;
+            margin-top: 1.0rem;
           }
           li {
             width: auto;
@@ -400,7 +400,7 @@
         }
       }
       .slider-footer {
-        margin: 2.4rem 0 0;
+        margin: 2.0rem 0 0;
         font-size: 2.4rem;
         color: $white;
         text-align: center;

@@ -17,7 +17,7 @@
     transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   &-copyright {
-    margin-left: 5.7rem;
+    margin-left: 3.0rem;
     margin-bottom: 2.0rem;
     color: #404040;
     font-family: 'Texgyreadventor';
@@ -26,18 +26,18 @@
       font-size: 1.8rem;;
     }
     @include mq("desktop", max) {
-      margin-left: 2.0rem;
+      margin-left: 1.8rem;
       margin-bottom: 1.0rem;
       font-size: 1.5rem;
     }
   }
   &-menu {
     margin-left: auto;
-    margin-right: 5.7rem;
+    margin-right: 3.0rem;
     margin-bottom: 2.0rem;
     font-size: 1.4rem;
     @include mq("desktop", max) {
-      margin-right: 2.0rem;
+      margin-right: 1.8rem;
       margin-bottom: 1.0rem;
     }
     &__trigger {
