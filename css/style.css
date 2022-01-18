@@ -745,6 +745,7 @@ p {
         width: 46rem;
         margin: auto;
         border: 1px solid #707070;
+        background-color: #58585833;
         border-radius: 5px; }
         @media only screen and (max-width: 1200px) {
           .section.slider .content-holder .slider-holder .single-slide .slide-inner {
@@ -769,7 +770,7 @@ p {
             height: 100%;
             object-fit: cover; }
         .section.slider .content-holder .slider-holder .single-slide .slide-inner .details {
-          margin: 1.8rem 0 1.5rem;
+          margin: 1.5rem 0 1.5rem;
           padding: 0 2.0rem;
           display: flex;
           align-items: center;
@@ -844,7 +845,7 @@ p {
                   font-size: 1.3rem;
                   margin-left: 0.5rem; } }
         .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
-          padding: 0 2.0rem 2.0rem; }
+          padding: 0 2.0rem 1.5rem; }
           @media only screen and (max-width: 1200px) {
             .section.slider .content-holder .slider-holder .single-slide .slide-inner > p {
               padding: 0 1rem 1rem; } }
