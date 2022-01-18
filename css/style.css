@@ -924,7 +924,8 @@ p {
     @media only screen and (max-width: 640px) {
       .section.slider .content-holder .slider-footer {
         margin-top: 1.6rem;
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        text-align: left; } }
     .section.slider .content-holder .slider-footer a {
       color: #05C5FF; }
 .section.cards .container {
