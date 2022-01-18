@@ -649,7 +649,8 @@
           line-height: 1;
           font-weight: 400;
           margin: 0 0 3rem;
-          // transition: all 0.7s ease-in-out;
+          transform: translateY(0%);
+          transition: all 0.7s ease-in-out;
           @include mq("desktop-ultra", max) {
             font-size: 9.6rem;
           }
@@ -696,6 +697,7 @@
           animation-timing-function: ease-out;
           animation-iteration-count: infinite;
           animation-direction: alternate;
+          transform: translateY(30%);
         }
         img, p {
           opacity: 0;

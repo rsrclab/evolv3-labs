@@ -1126,7 +1126,9 @@ p {
       font-size: 12rem;
       line-height: 1;
       font-weight: 400;
-      margin: 0 0 3rem; }
+      margin: 0 0 3rem;
+      transform: translateY(0%);
+      transition: all 0.7s ease-in-out; }
       @media only screen and (max-width: 1599px) {
         .section.starting .text-block .text-area h1 {
           font-size: 9.6rem; } }
@@ -1162,7 +1164,8 @@ p {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate; }
+    animation-direction: alternate;
+    transform: translateY(30%); }
   .section.starting .text-block.animating img, .section.starting .text-block.animating p {
     opacity: 0; }
 
